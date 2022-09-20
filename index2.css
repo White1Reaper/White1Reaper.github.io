@@ -19,7 +19,9 @@
 		width: 100%;
 				background: #00FFFF;
 		}
-
+em{
+	color: red;
+}
 .obtek{
 	float:left;
 	padding:25px;
