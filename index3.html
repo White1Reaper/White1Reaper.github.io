@@ -1,1 +1,175 @@
 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>всякая всячина</title> 
+<link rel="stylesheet" href="https://white1reaper.github.io/index2.css">
+
+	</head>
+	
+<body>
+
+  
+  <header>
+   <img src="https://avatars.mds.yandex.net/i?id=5ae6c2bcebce1fd6f94518528419fe76-5216285-images-thumbs&ref=rim&n=33&w=165&h=150" alt="logo" class="obtek"  width="130" height="130">
+   
+<div class = "name"><em>Название сайта</em></div>
+ <nav>
+ <ul class = "menu">	
+ <li><a href = "#tab1">Таблица</a></li>
+ <li><a href = "#giper">Гиперссылки</a></li>
+ <li><a href = "#fm">Форма</a></li>
+		 </ul>
+	 </nav>
+  </header>
+ <br/>
+	  <h1>Задание№1</h1>
+	<h2 id="giper">Список гиперссылок:</h2>
+	<ul>
+<li><a href="http://example.com">example</a></li>
+<li><a href="https://www.example.com">main_page_example</a></li>
+<li><a href="ftp://example.com/Temp/file.txt">file</a></li>
+<li><a href="ftp://username:pass@example.com/Temp/file.txt">file_with_authorization</a></li>
+<li><a href="http://example.com#foto-3">foto-3</a></li>
+<li><a href="#id">part_page</a></li>
+<li><a href="http://example.com?param1=value1&param2=value2">example</a></li>
+</ul>
+<nav>
+<ul>
+<li><a href="#part1" title="description1">part 1</a></li> 
+<li><a href="#part2" title="description2">part 2</a></li> 
+<li><a href="#part3" title="description3">part 3</a></li>
+</ul>
+</nav>
+<ul>
+<li><a> http://example.com</a></li>
+<li><a href="">nothing</a></li>
+<li><a href="http://example.com" rel="nofollow">no_follow_example</a></li>
+<li><a href="http://example.com" rel="noindex">no_index_example</a></li>
+<li><a href="http://example.com/">
+  <p> здесь находится любой текст </p>
+</a></li>
+<li><a href="http://example.com/"><img src="https://www.fonstola.ru/images/201112/fonstola.ru_64326.jpg" id="foto-1" width="200" height="100" alt="image"></a></li>
+	</ul>
+<img src="https://miroslavs.com/wp-content/uploads/2012/08/12.png" width="100" height="100" alt="image" usemap="#box">
+<map name="box">
+<area shape="rect" coords="0,0,47,47" href="http://example.com" alt="красный квадрат" />
+<area shape="circle" coords="27,72,23" href="http://example.com" alt="синий круг" />
+</map>
+	<ul>
+  <li><a href="file1.html">file1</a></li>
+<li><a href="/about/file2.html">file2_in_about</a></li>
+<li><a href="../file3.html">1_level_up_file3</a></li>
+<li><a href="../../file4.html">2_level_up_file4</a></li>
+<li><a href="/">КубГУ</a></li>
+<li><a href="/about">example_in</a></li>
+		 </ul>
+<table border="2" bordercolor="black">
+			<tr class="str3">
+				<td align="center" colspan="4">Заголовок</td>
+				</tr>
+			<tr class="str1">
+				<td></td>
+				<td>признак 1</td>
+				<td>признак 2</td>
+				<td>признак 3</td>
+			</tr>
+			<tr class="str2">
+				<td>свойство 1</td>
+				<td>значение 1</td>
+				<td>значение 2</td>
+				<td>значение 3</td>
+			</tr>
+			<tr class="str1">
+				<td>свойство 2</td>
+				<td>значение 4</td>
+				<td>значение 5</td>
+				<td>значение 6</td>
+			</tr>
+			<tr class="str2">
+				<td>свойство 3</td>
+				<td>значение 7</td>
+				<td>значение 8</td>
+				<td>значение 9</td>
+			</tr>
+			<tr class="str1">
+				<td>свойство 4</td>
+				<td>значение 10</td>
+				<td>значение 11</td>
+				<td>значение 12</td>
+			</tr>
+			<tr class="str2">
+				<td>свойство 5</td>
+				<td>значение 13</td>
+				<td>значение 14</td>
+				<td>значение 15</td>
+			</tr>
+			</table>
+		<h2  id="fm">Форма</h2> 
+	<form action="/"
+	      method ="POST">
+		       <label>
+		       имя <br/>
+		       <input name ="f-name"
+					   placeholder="ваше имя" />
+							 </label><br />
+		       <label>
+		       email <br/>
+		       <input name ="f-name" type="email"
+					   placeholder="ваше почта" />
+							 </label><br />
+				       <label> дата
+					       <br />
+		       <input name ="f-date" type="date"/>
+					    </label><br />
+					       
+					       пол <br />
+					       <label>
+		       <input name ="f-gender" type="radio" checked="checked"
+					   value="man" /> мужской </label>
+		       <label> 
+	               <input name ="f-gender" type="radio" checked="checked"
+					   value="woman" /> женский </label>
+					           <br />
+			<label>		       
+		       количество конечностей <br />
+		       <input name ="f-limbs" type="radio" checked="checked"
+					   value="2limbs" /> 2
+					        </label>
+		<label>		       
+		       <br />
+		       <input name ="f-limbs" type="radio" checked="checked"
+					   value="4limbs" /> 4
+					        </label>
+		<label>		       
+		       <br />
+		       <input name ="f-limbs" type="radio" checked="checked"
+					   value="10limbs" /> 10
+					        </label>
+		
+		<br />
+		<label><br />
+			<select name ="list"
+				multiple="multiple">
+				<option value="point1">бессмертие</option>
+				<option value="point2" selected="selected">левитация</option>
+				<option value="point3"  selected="selected">регенерация</option>
+		</select>
+	
+		</label><br />
+		<label> биография
+			<br />
+			<textarea name="biography"></textarea>
+			</label><br/>
+		<br />
+			<label>		       
+		        <input name ="box" type="checkbox" checked="checked"/> с контрактом ознакомлен(а)
+					        </label> <br />
+		<button type="submit">Отправить</button>
+					      	</form>
+	<footer>
+	<h3>(с) Сергей Синица 2019</h3>
+	</footer>
+	 <br/>
+	</body>
+  </html>
