@@ -1,4 +1,7 @@
-
+.body{
+	width: 100%;
+	display:flex;
+}
 .obtek{
 			float:left;
 			margin: 5px 5px 5px 5px;
