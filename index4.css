@@ -3,13 +3,13 @@
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
-		background-color:#800080;
+		background: #800080;
 	}
 }
 @media all and(min-width: 600px){
 	.body{
 		width: 100%;
-		background-color:#FF00FF;
+		background: #FF00FF;
 	}
 }
 			float:left;
