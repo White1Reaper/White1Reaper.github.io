@@ -4,11 +4,14 @@
 		display: flex;
 		flex-wrap: wrap;
 		background: #800080;
-			.nav1{
+		.menu{
+			font-size:20px;
+			list-style: none;
+			
 				display: flex;
 		flex-direction: wrap;
-				
-	}
+}
+
 	}
 }
 @media all and(min-width: 600px){
@@ -16,6 +19,10 @@
 		width: 100%;
 		background: #FF00FF;
 	}
+.menu{
+			font-size:20px;
+			list-style: none;
+}
 
 }
 			float:left;
@@ -46,8 +53,4 @@
 		.name{
 			font-size:60px;
 		}
-		.menu{
-			font-size:20px;
-			list-style: none;
-}
-	
+		 	
