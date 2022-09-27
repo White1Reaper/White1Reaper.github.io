@@ -1,5 +1,17 @@
-
-.obtek{
+@media all and(max-width: 599.99px){
+	.body{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		background-color:#800080;
+	}
+}
+@media all and(min-width: 600px){
+	.body{
+		width: 100%;
+		background-color:#FF00FF;
+	}
+}
 			float:left;
 			margin: 5px 5px 5px 5px;
 		}
