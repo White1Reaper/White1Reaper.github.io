@@ -5,7 +5,9 @@
 		flex-wrap: wrap;
 		background: #800080;
 			nav{
+				display: flex;
 		flex-direction: wrap;
+				
 	}
 	}
 }
