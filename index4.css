@@ -1,5 +1,5 @@
 @media all and(max-width: 599.99px){
-	.body{
+	body{
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
@@ -7,7 +7,7 @@
 	}
 }
 @media all and(min-width: 600px){
-	.body{
+	body{
 		width: 100%;
 		background: #FF00FF;
 	}
