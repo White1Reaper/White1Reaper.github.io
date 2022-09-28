@@ -12,10 +12,12 @@
 		order:1;
 	}
 		.container{
-				display: flex;
+		display: flex;
 		flex-direction: column;
 }
-
+  .container > li {
+    flex-basis: 33%;
+  }
 	
 }
 @media all and(min-width: 700px){
