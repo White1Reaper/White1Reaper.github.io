@@ -29,8 +29,7 @@
 }
 
 }
-			float:left;
-			margin: 5px 5px 5px 5px;
+			
 		}
 		.str1{
 			background: #FF0000;
@@ -53,6 +52,7 @@
 .obtek{
 	float:left;
 	padding:25px;
+	margin: 5px 5px 5px 5px;
 		}
 		.name{
 			font-size:60px;
