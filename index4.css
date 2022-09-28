@@ -11,7 +11,7 @@
 	.item2{
 		order:1;
 	}
-		.nav1{
+		.container{
 				display: flex;
 		flex-direction: column;
 }
