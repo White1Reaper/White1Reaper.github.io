@@ -1,4 +1,4 @@
-@media all and(max-width: 1999.99px){
+@media all and(max-width: 699.99px){
 	.flexible-page{
 		width: 100%;
 		display: flex;
@@ -18,7 +18,7 @@
 
 	
 }
-@media all and(min-width: 2000px){
+@media all and(min-width: 700px){
 	body{
 		width: 100%;
 		background: #FF00FF;
