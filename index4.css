@@ -9,6 +9,12 @@
 #flexible-page form{
 	order:1;
 }
+
+#flexible-page body{
+		width: 100%;
+				background: #ddd;
+	
+}
 @media all and(max-width:400px){
 	#flexible-page table{
 	order:1;
