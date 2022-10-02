@@ -5,10 +5,10 @@
 
 }
 #flexible-page .table1{
-	order:1;
+	order:0;
 }
 #flexible-page .form1{
-	order:0;
+	order:1;
 }
 
 #flexible-page body{
@@ -16,7 +16,7 @@
 				background: #ddd;
 	
 }
-@media all and(max-width:400px){
+@media all and(max-device-width:400px){
 	#flexible-page .table1{
 	order:1;
 }
