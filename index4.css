@@ -1,6 +1,3 @@
-form{
- background: #00FFFF;
-}
 #flexible-page{
 	display: flex;
 	flex-direction:column;
@@ -11,6 +8,7 @@ form{
 }
 #flexible-page .form1{
 	order:1;
+background: #00FFFF;
 }
 
 #flexible-page body{
