@@ -1,14 +1,14 @@
 @media all and(max-width: 699.99px){
-	body{
+	#body{
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		background-color: #800080;
 	}
-	form{
+	#form{
 		order: 0;
 	}
-	table{
+	#table{
 		order:1;
 	}
 		.container{
@@ -21,7 +21,7 @@
 	
 }
 @media all and(min-width: 700px){
-	body{
+	#body{
 		width: 100%;
 		background-color: #FF00FF;
 	}
