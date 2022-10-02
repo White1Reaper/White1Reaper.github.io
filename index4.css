@@ -3,7 +3,7 @@
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
-		color: #800080;
+		background-color: #800080;
 	}
 	form{
 		order: 0;
@@ -23,7 +23,7 @@
 @media all and(min-width: 700px){
 	body{
 		width: 100%;
-		color: #FF00FF;
+		background-color: #FF00FF;
 	}
 
 .container{
