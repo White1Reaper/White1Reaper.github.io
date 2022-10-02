@@ -5,7 +5,8 @@
 }
 .vp
 {
-    vertical-align: middle;	
+	display: flex;
+    align-items: center;	
 }
 #flexible-page .table1{
 	order:0;
