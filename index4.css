@@ -3,6 +3,10 @@
 	flex-direction:column;
 
 }
+.vp
+{
+ flex-direction:column;	
+}
 #flexible-page .table1{
 	order:0;
 }
