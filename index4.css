@@ -42,7 +42,9 @@
 				background: #00FFFF;
 				order:3;
 		}
-
+buttom{
+	order:4;
+}
 .obtek{
 	float:left;
 	padding:25px;
