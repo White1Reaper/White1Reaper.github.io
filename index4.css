@@ -1,10 +1,10 @@
-@media all and(max-width: 699.99px){
-	#body{
+	#flexible-page{
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		background-color: #800080;
 	}
+@media all and(max-width: 699.99px){
 	#form{
 		order: 0;
 	}
