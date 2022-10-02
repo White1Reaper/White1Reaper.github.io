@@ -4,34 +4,9 @@
 		flex-wrap: wrap;
 		background-color: #800080;
 	}
-@media all and(max-width: 699.99px){
-	#form{
-		order: 0;
-	}
-	#table{
-		order:1;
-	}
-		.container{
-		display: flex;
-		flex-direction: column;
-}
-  .container > li {
-    flex-basis: 33%;
-  }
-	
-}
-@media all and(min-width: 700px){
-	#body{
-		width: 100%;
-		background-color: #FF00FF;
-	}
 
-.container{
-			font-size:20px;
-			list-style: none;
-}
 
-}
+
 			
 		}
 		.str1{
