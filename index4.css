@@ -5,7 +5,7 @@
 }
 .vp
 {
- flex-direction:column;	
+    vertical-align: middle;	
 }
 #flexible-page .table1{
 	order:0;
