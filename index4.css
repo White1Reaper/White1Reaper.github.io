@@ -1,14 +1,14 @@
 @media all and(max-width: 699.99px){
-	.flexible-page{
+	body{
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		background: #800080;
 	}
-	.item1{
+	form{
 		order: 0;
 	}
-	.item2{
+	table{
 		order:1;
 	}
 		.container{
@@ -25,11 +25,7 @@
 		width: 100%;
 		background: #FF00FF;
 	}
-		.item1{
-		order: 1;
-	}
-	.item2{
-		order:0;
+
 .container{
 			font-size:20px;
 			list-style: none;
