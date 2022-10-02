@@ -1,7 +1,8 @@
 
 #flexible-page{
 	display: flex;
-	flex-wrapper:wrap;
+	flex-direction:column;
+
 }
 #flexible-page table{
 	order:0;
