@@ -5,10 +5,10 @@
 
 }
 #flexible-page .table1{
-	order:0;
+	order:1;
 }
 #flexible-page .form1{
-	order:1;
+	order:0;
 }
 
 #flexible-page body{
