@@ -16,7 +16,7 @@ background: #00FFFF;
 				background: #ddd;
 	
 }
-@media (max-width:400px){
+@media (max-width:1000px){
 	#flexible-page .table1{
 	order:1;
 }
