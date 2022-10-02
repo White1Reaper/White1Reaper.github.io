@@ -4,10 +4,10 @@
 	flex-direction:column;
 
 }
-#flexible-page table{
+#flexible-page .table1{
 	order:0;
 }
-#flexible-page form{
+#flexible-page .form1{
 	order:1;
 }
 
@@ -17,10 +17,10 @@
 	
 }
 @media all and(max-width:400px){
-	#flexible-page table{
+	#flexible-page .table1{
 	order:1;
 }
-#flexible-page form{
+#flexible-page .form1{
 	order:0;
 }
 }
