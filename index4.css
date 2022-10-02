@@ -1,7 +1,22 @@
 
-
-			
-		
+#flexible-page{
+	display: flex;
+	flex-wrapper:wrap;
+}
+#flexible-page table{
+	order:0;
+}
+#flexible-page form{
+	order:1;
+}
+@media all and(max-width:400px){
+	#flexible-page table{
+	order:1;
+}
+#flexible-page form{
+	order:0;
+}
+}
 		.str1{
 			background: #FF0000;
 		}
