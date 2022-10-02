@@ -1,4 +1,6 @@
-
+body{
+ background: #00FFFF;
+}
 #flexible-page{
 	display: flex;
 	flex-direction:column;
