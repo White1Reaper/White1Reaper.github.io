@@ -16,7 +16,7 @@
 				background: #ddd;
 	
 }
-@media all and(max-device-width:400px){
+@media (max-width:400px){
 	#flexible-page .table1{
 	order:1;
 }
