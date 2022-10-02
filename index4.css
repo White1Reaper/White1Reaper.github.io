@@ -3,11 +3,7 @@
 	flex-direction:column;
 
 }
-.vp
-{
-	display: flex;
-    align-items: center;	
-}
+
 #flexible-page .table1{
 	order:0;
 }
