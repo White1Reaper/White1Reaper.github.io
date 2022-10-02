@@ -8,7 +8,6 @@
 }
 #flexible-page .form1{
 	order:1;
-background: #00FFFF;
 }
 
 #flexible-page body{
@@ -16,12 +15,11 @@ background: #00FFFF;
 				background: #ddd;
 	
 }
-@media (max-width:1000px){
+@media (max-width:700px){
 	#flexible-page .table1{
 	order:1;
 }
 #flexible-page .form1{
-	background:#000080;
 	order:0;
 }
 }
