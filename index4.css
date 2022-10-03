@@ -4,7 +4,9 @@
 
 }
 header{
-	background:leane-gradient(30deg,#0000FF,#00FFFF,#FF0000);}
+	background:leane-gradient(30deg,#0000FF,#00FFFF,#FF0000);
+height:300px;
+}
 	
 
 #flexible-page .table1{
