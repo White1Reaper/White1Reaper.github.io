@@ -4,7 +4,7 @@
 
 }
 .1header{
-	background:leane-gradient(30deg,#0000FF,#00FFFF,#FF0000);
+	background:linear-gradient(30deg,#0000FF,#00FFFF,#FF0000);
 height:300px;
 }
 	
