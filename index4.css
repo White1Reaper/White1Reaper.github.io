@@ -3,6 +3,9 @@
 	flex-direction:column;
 
 }
+header{
+	background:leane-gradient(30deg,#0000FF,#00FFFF,#FF0000);}
+	
 
 #flexible-page .table1{
 	order:0;
