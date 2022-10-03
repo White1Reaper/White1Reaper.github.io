@@ -3,9 +3,9 @@
 	flex-direction:column;
 
 }
-.1header{
-	background:linear-gradient(30deg,#0000FF,#00FFFF,#FF0000);
-height:300px;
+div {
+height: 200px;
+background: linear-gradient(45deg, #EECFBA, #C5DDE8);
 }
 	
 
