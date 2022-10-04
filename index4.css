@@ -2,8 +2,11 @@
 	display: flex;
 	flex-direction:column;
 
-					background-color:#00ff0a;
-	margin-left:100px;
+
+}
+.fon{
+
+background:#00ff2d;
 }
 .grad1 {
 height: 200px;
