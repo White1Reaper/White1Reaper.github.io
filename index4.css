@@ -63,6 +63,6 @@ button{
 		.name{
 			font-size:60px;
 		}
-.vp{
+.vp > a {
 	text-color: red;
 }
