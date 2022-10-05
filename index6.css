@@ -1,0 +1,62 @@
+#flexible-page{
+	display: flex;
+	flex-direction:column;
+}
+#flexible-page .fon{
+	margin-left: auto;
+	margin-right: auto;
+background:green;
+}
+.grad1 {
+height: 200px;
+background: linear-gradient( DeepSkyBlue, blue);
+}
+	
+
+#flexible-page .table1{
+	order:0;
+}
+#flexible-page .form1{
+	order:1;
+}
+
+#flexible-page body{
+		width: 100%;
+}
+@media (max-width:700px){
+	#flexible-page .table1{
+	order:1;
+}
+#flexible-page .form1{
+	order:0;
+}
+}
+		.str1{
+			background: yellow;
+		}
+		.str3{
+			background: red;
+		}
+		.str2{
+			background: #00FFFF;
+		}
+	header{
+		width: 100%;
+		
+		}
+			footer{
+		width: 100%;
+				background: #00FFFF;
+				order:3;
+		}
+button{
+	order:4;
+}
+.obtek{
+	float:left;
+	padding:25px;
+	margin: 5px 5px 5px 5px;
+		}
+		.name{
+			font-size:60px;
+		}
