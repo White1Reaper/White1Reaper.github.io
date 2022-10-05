@@ -21,7 +21,7 @@ background: linear-gradient( DeepSkyBlue, blue);
 #flexible-page body{
 		width: 100%;
 }
-@media all and(max-width:700px){
+@media (max-width:700px){
 	#flexible-page .table1{
 	order:1;
 }
