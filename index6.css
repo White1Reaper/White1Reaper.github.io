@@ -3,7 +3,8 @@
 	flex-direction:column;
 }
 #flexible-page .fon{
-
+margin-left:auto;
+	margin-right:auto;
 background:green;
 }
 .grad1 {
