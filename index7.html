@@ -4,11 +4,18 @@
 <title>вычисление стоимости</title> 
   </head>
   <body>
-    
+    <script>   
+   function click(){
+     let f1=document.getElementsByName("price");
+     let f2=document.getElementsByName("count");
+     r.innerHTML=f1[0].value*f2[0].value;
+     return false;
+   }
+    </script>
     <form> 
     <input name="price" type="text" placeholder="цена товара">
         <input name="count" type="text" placeholder="количество товара">
-      <button id="button1"> подсчитать</button>
+      <button id="button1" onclick="return click1();}> подсчитать</button>
     </form>
     </body>
   </html>
