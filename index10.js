@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
  let radios = document.getElementById("myradios");
  console.log(select.value);
  // Можно использовать getElementsByClassName()
- if (select.value == "3") {
+ if (select.value == "1") {
  radios.style.display = "none";
  }
  else {
