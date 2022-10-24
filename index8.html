@@ -13,11 +13,12 @@
    
     window.addEventListener('DOMContentLoaded', function (event) {
  let s = document.getElementsByName("myselect");
+ let radios = document.getElementById("myradios");
+radios.style.display = "none";
+
  s[0].addEventListener("change", function(event) {
  let select = event.target;
- let radios = document.getElementById("myradios");
  radios.style.display = "none";
- // Можно использовать getElementsByClassName()
  if (select.value == "1") {
  radios.style.display = "none";
  }
