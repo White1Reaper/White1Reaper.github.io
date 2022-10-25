@@ -22,9 +22,16 @@ let checkboxes = document.getElementById("checkboxes");
  radios.style.display = "none";
  if (select.value == "1") {
  radios.style.display = "none";
+   checkboxes.style.display = "none";     
  }
  else {
+   if(select.value == "2"){
  radios.style.display = "block";
+       checkboxes.style.display = "none";
+   }
+   else {
+      checkboxes.style.display = "block";
+      radios.style.display = "none";
  }
  });
 
