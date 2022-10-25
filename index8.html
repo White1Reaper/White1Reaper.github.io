@@ -10,7 +10,13 @@
    </head>
   <body>
  <script>
-   
+      function click1() {
+let f1 =document.querySelector(".field1");
+ let f2 =document.querySelector(".field2");
+ let r = document.getElementById("result");
+ r.innerHTML = 1*f1.value * 1*f2.value;
+ return false;
+}
     window.addEventListener('DOMContentLoaded', function (event) {
  let s = document.getElementsByName("myselect");
  let radios = document.getElementById("myradios");
@@ -45,13 +51,7 @@ let checkboxes = document.getElementById("checkboxes");
  });
 
 });
-   function click1() {
-let f1 =document.querySelector(".field1");
- let f2 =document.querySelector(".field2");
- let r = document.getElementById("result");
- r.innerHTML = 1*f1.value * 1*f2.value;
- return false;
-}
+
    </script>
   <form>
     <div id="inputting">
