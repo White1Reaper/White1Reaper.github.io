@@ -42,8 +42,17 @@ let checkboxes = document.getElementById("checkboxes");
       radios.style.display = "none";
    }
  }
- }});
+ });
 
+ let r = document.querySelectorAll(".myradios input[type=radio]");
+ r.forEach(function(radio) {
+ radio.addEventListener("change", function(event) {
+ let r = event.target;
+ console.log(r.value);
+ });
+ });
+
+});
    </script>
   <form>
     <div id="inputting">
