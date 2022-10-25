@@ -12,15 +12,35 @@
  <script>
       function click1() {
 let f1 =document.querySelector(".field1");
- let f2 =document.querySelector(".field2");
  let r = document.getElementById("result");
  let c1 = document.getElementById("c1");
  let c2 = document.getElementById("c2");
-        let b=1*f1.value * 1*f2.value;
-
- if(c1.checked)       
-  b=b*1.1; 
-        r.innerHTML =b;
+        let ch1 = document.getElementById("ch1");
+let ch2 = document.getElementById("ch2");
+let ch3 = document.getElementById("ch3");
+let opt1 = document.getElementById("opt1");
+let opt2 = document.getElementById("opt2");
+let opt3 = document.getElementById("opt3");
+let b=1*f1.value;
+if(opt3.checked){
+ b=b*1000000;
+    if(c2.checked)       
+    b=b*1,5;
+  if(c1.checked)       
+  b=b+30000; 
+}
+        if(opt2.checked)
+        {
+           if(ch1.checked) 
+             b=b*10;
+                     if(ch2.checked) 
+             b=b*15;
+                     if(ch3.checked) 
+             b=b*20;
+        }
+        if(opt1.checked)
+          b=b*1000;
+        r.innerHTML=b;
  return false;
 }
     window.addEventListener('DOMContentLoaded', function (event) {
@@ -65,14 +85,14 @@ let checkboxes = document.getElementById("checkboxes");
  <button id="button1" onclick="return click1();">OK</button>
     </div>
     <select name="myselect">
-      <option value="1">Product 1</option>
-      <option value="2">Product 2</option>
-      <option value="3">Product 3</option>
+      <option value="1" id="opt1">Product 1</option>
+      <option value="2" id="opt2">Product 2</option>
+      <option value="3" id="opt3">Product 3</option>
     </select>
     <div id="myradios" class="myradios">
-      <label><input type="radio" name=""myradio" value="1"> Опция 1</label>
-      <label><input type="radio" name="myradio" value="2"> Опция 2</label>
-      <label><input type="radio" name="myradio" value="3"> Опция 3</label>
+      <label><input type="radio" name=""myradio" value="1" id="ch1"> Опция 1</label>
+      <label><input type="radio" name="myradio" value="2" id="ch2"> Опция 2</label>
+      <label><input type="radio" name="myradio" value="3" id="ch3"> Опция 3</label>
     </div>
     <div id="checkboxes">
       <label><input type="checkbox" name="prop1" id="c1"> Свойство 1</label>
