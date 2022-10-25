@@ -14,7 +14,9 @@
 let f1 =document.querySelector(".field1");
  let f2 =document.querySelector(".field2");
  let r = document.getElementById("result");
- r.innerHTML = 1*f1.value * 1*f2.value;
+ let c1 = document.getElementById("c1");
+        let c2 = document.getElementById("c2");
+        r.innerHTML = 1*f1.value * 1*f2.value;
  return false;
 }
     window.addEventListener('DOMContentLoaded', function (event) {
@@ -40,17 +42,7 @@ let checkboxes = document.getElementById("checkboxes");
       radios.style.display = "none";
    }
  }
- });
-
- let r = document.querySelectorAll(".myradios input[type=radio]");
- r.forEach(function(radio) {
- radio.addEventListener("change", function(event) {
- let r = event.target;
- console.log(r.value);
- });
- });
-
-});
+ }});
 
    </script>
   <form>
@@ -70,8 +62,8 @@ let checkboxes = document.getElementById("checkboxes");
       <label><input type="radio" name="myradio" value="3"> Опция 3</label>
     </div>
     <div id="checkboxes">
-      <label><input type="checkbox" name="prop1"> Свойство 1</label>
-      <label><input type="checkbox" name="prop2"> Свойство 2</label>
+      <label><input type="checkbox" name="prop1" id="c1"> Свойство 1</label>
+      <label><input type="checkbox" name="prop2" id="c2"> Свойство 2</label>
     </div>
   </form>
    <div id="result"></div>
