@@ -16,8 +16,11 @@ let f1 =document.querySelector(".field1");
  let r = document.getElementById("result");
  let c1 = document.getElementById("c1");
  let c2 = document.getElementById("c2");
+        let b=1*f1.value * 1*f2.value;
+
  if(c1.checked)       
-        r.innerHTML = 1*f1.value * 1*f2.value;
+  b=b*1.1; 
+        r.innerHTML =b;
  return false;
 }
     window.addEventListener('DOMContentLoaded', function (event) {
