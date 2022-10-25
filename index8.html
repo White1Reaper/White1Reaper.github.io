@@ -15,7 +15,8 @@
  let s = document.getElementsByName("myselect");
  let radios = document.getElementById("myradios");
 radios.style.display = "none";
-
+let checkboxes = document.getElementById("checkboxes");
+ checkboxes.style.display = "none";     
  s[0].addEventListener("change", function(event) {
  let select = event.target;
  radios.style.display = "none";
