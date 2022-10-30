@@ -13,12 +13,13 @@
       function click1() {
 let f1 =document.querySelector(".field1");
  let r = document.getElementById("result");
- let c1 = document.getElementById("c1");
- let c2 = document.getElementById("c2");
- let select = document.getElementByName("myselect");
-let b=1*f1.value;
+let select = document.querySelector('myselect');
+let b=1*f1.value;        
+if(select.value=="1"){
+ b=b*1000000; 
+}
 r.innerHTML=b;
-         return false;
+return false;
 
 }
     window.addEventListener('DOMContentLoaded', function (event) {
