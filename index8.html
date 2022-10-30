@@ -13,9 +13,8 @@
       function click1() {
 let f1 =document.querySelector(".field1");
  let r = document.getElementById("result");
-let select = document.querySelector('myselect');
+let select = document.querySelector('.myselect1');
 let b=1*f1.value;        
-
 r.innerHTML=b;
 return false;
 
@@ -61,7 +60,7 @@ let checkboxes = document.getElementById("checkboxes");
      <input name="field11" class="field1" placeholder="кол-во товаров" type="text">
  <button id="button1" onclick="return click1();">OK</button>
     </div>
-    <select name="myselect">
+    <select name="myselect" class="myselect1">
       <option value="1" id="opt1">Product 1</option>
       <option value="2" id="opt2">Product 2</option>
       <option value="3" id="opt3">Product 3</option>
