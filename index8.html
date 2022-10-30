@@ -23,14 +23,14 @@ let opt1 = document.getElementById("opt1");
 let opt2 = document.getElementById("opt2");
 let opt3 = document.getElementById("opt3");
 let b=1*f1.value;
-if(select.value=1){
+if(select.value=="1"){
  b=b*1000000;
     if(c2.checked)       
     b=b*1,5;
   if(c1.checked)       
   b=b+30000; 
 }
-        if(opt2.checked)
+        if(select.value=="2")
         {
            if(ch1.checked) 
              b=b*10;
@@ -39,7 +39,7 @@ if(select.value=1){
                      if(ch3.checked) 
              b=b*20;
         }
-        if(opt1.checked)
+        if(select.value=="3")
           b=b*1000;
         r.innerHTML=b;
  return false;
