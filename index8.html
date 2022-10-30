@@ -19,8 +19,14 @@ let b=1*f1.value;
         if(select.value=="1"){
           b=b*10;
         }
+        else{
                 if(select.value=="2){
           b=b*100;
+        }
+                else 
+                {
+                  b=b*1000;
+                }
         }
 r.innerHTML=b;
 return false;
