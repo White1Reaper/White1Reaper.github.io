@@ -20,30 +20,6 @@ let b=1*f1.value;
 r.innerHTML=b;
          return false;
 
-if(select.value=="1"){
- b=b*1000000;
-    if(c2.checked){    
-    b=b*1,5;
-    }
-  if(c1.checked){       
-  b=b+30000;
-  }
-    
-   r.innerHTML=b;
-}
-        if(select.value=="2")
-        {
-           if(ch1.checked) 
-             b=b*10;
-                     if(ch2.checked) 
-             b=b*15;
-                     if(ch3.checked) 
-             b=b*20;
-        }
-        if(select.value=="3")
-          b=b*1000;
-        r.innerHTML=b;
- return false;
 }
     window.addEventListener('DOMContentLoaded', function (event) {
  let s = document.getElementsByName("myselect");
