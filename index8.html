@@ -38,7 +38,8 @@ if(radios.value="2"){
                     b=b*500;
                   }
         }
-        if(select.value=="1"){
+  else{
+    if(select.value=="3"){
                   b=b*1000000;
                   if(c1.checked){
                   b=b*1,5;
@@ -47,6 +48,8 @@ if(radios.value="2"){
                   b=b+15000;
                   }
         }
+    
+  }
         }
 r.innerHTML=b;
 return false;
