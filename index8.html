@@ -17,7 +17,7 @@ let select = document.querySelector('.myselect1');
 
          let c1 = document.getElementById("c1");
         let c2 = document.getElementById("c2");
-let radios = document.querySelectorAll('input[type="radio"]');
+const radio1 = document.querySelector('input[name="myradio"]:checked')
 
 let b=1*f1.value;        
         if(select.value=="1"){
@@ -27,17 +27,17 @@ else {
                 if(select.value=="2"){
                   
 
-if(radio.value=="1"){
+if(radio1.value=="1"){
 
 b=b*15;
 }
                   else{
-if(radio.value=="2"){
+if(radio1.value=="2"){
            
                     b=b*50;
                   }
                     else {
- if(radio.value=="3"){
+ if(radio1.value=="3"){
                   
                     b=b*500;
                   }
