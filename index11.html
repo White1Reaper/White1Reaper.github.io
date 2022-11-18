@@ -13,23 +13,65 @@
 		this.gallery = gallery;
 		this.setup = setup;
  
-		// контейнер в котором отображаются элементы галереи
 		this.slider = this.gallery.querySelector('.slider');
-		// контейнер, непосредственно в котором расположены элементы слайдера
 		this.stage = this.gallery.querySelector('.stage');
-		// элементы слайдера
 		this.items = this.gallery.querySelectorAll('.stage > div');
-		// количество элементов в слайдере
 		this.count = this.items.length;
- 
-		this.current = 0;		
+ 		this.current = 0;		
 		this.next = 0;			
 		this.pressed = false;	
 		this.start = 0;			
 		this.shift = 0;			
+ 		this.init();
+				static defaults = {
+		margin:			10,		// расстояние между элементами [px]
+		visibleItems: 	1,		// сколько элементов показывать одновременно
+		border:			0,		// толщина рамки изображения прописанная в CSS [px]
+		responsive:		true,	// адаптивная галерея
+		autoScroll:		false,	// автоматическое прокручивание
+		interval: 		3000,	// задержка при автоматическом прокручивании [ms]
+		nav:			true,	// показать/скрыть кнопки next/prev
+		dots:			false,	// показать/скрыть постраничную навигацию
+		keyControl: 	false,	// управление клавишами вправо / влево
+		animated:		false,	// включение анимации
+		baseTransition:	0.4,	// скорость анимации, при изменении CSS свойств
+		delayTimer:		250,	// время задержки при resize страницы [ms]
+		limit:			30		// ограничиваем перемещение крайних элементов [px]
+	};
+	static LEFT = 37;	// код клавиши 'стрелочка влево' 
+	static RIGHT = 39;	// код клавиши 'стрелочка вправо'
  
-		// построение галереи исходя из полученных настроек
-		this.init();
+	constructor(gallery, setup) {
+		...
+	}
+ 
+	// объединяет и перезаписывает значения двух объектов
+	// и выдаёт общий результат
+	static extend(out) {
+		out = out || {};
+		for (let i = 1; i < arguments.length; i++) {
+			if (!arguments[i]) continue;
+			for (let key in arguments[i]) {
+				if (arguments[i].hasOwnProperty(key)) out[key] = arguments[i][key];
+			}
+		}
+		return out;
+	};
+ 
+	// возвращает координату Х текущего положения
+	// курсора или пальца
+	static xpos(e) {
+		// touch event
+		// проверяем, сформирован ли список точек на текущем элементе
+		// (список пальцев, которые вступили в контакт)
+		if (e.targetTouches && (e.targetTouches.length >= 1)) {
+			// положение первой точки прикосновения, относительно левого края браузера
+			return e.targetTouches[0].clientX;
+		}
+		// mouse event
+		return e.clientX;
+	}
+}
 		}
 	}
  
