@@ -3,6 +3,45 @@
 <head>
 	<link rel="stylesheet" href="https://white1reaper.github.io/index12.css">
 </head>
+	<body>
+		<script>
+			;(function() {
+	'use strict';
+ 
+	class Gallery {
+		constructor(gallery, setup) {
+		this.gallery = gallery;
+		this.setup = setup;
+ 
+		// контейнер в котором отображаются элементы галереи
+		this.slider = this.gallery.querySelector('.slider');
+		// контейнер, непосредственно в котором расположены элементы слайдера
+		this.stage = this.gallery.querySelector('.stage');
+		// элементы слайдера
+		this.items = this.gallery.querySelectorAll('.stage > div');
+		// количество элементов в слайдере
+		this.count = this.items.length;
+ 
+		this.current = 0;		
+		this.next = 0;			
+		this.pressed = false;	
+		this.start = 0;			
+		this.shift = 0;			
+ 
+		// построение галереи исходя из полученных настроек
+		this.init();
+		}
+	}
+ 
+	const galleries = document.querySelectorAll('.gallery');
+	for (let gallery of galleries) {
+		
+		const setup = gallery.dataset.setting;
+		
+		const slider = new Gallery(gallery, setting[setup]);
+	}
+})();
+ </script>
 <div class="wrap">
 	<h1>Галерея</h1>
 	<div class="gallery" data-setting="setup1">
