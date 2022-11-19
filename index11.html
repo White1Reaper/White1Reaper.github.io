@@ -4,88 +4,57 @@
 	<link rel="stylesheet" href="https://white1reaper.github.io/index12.css">
 </head>
 	<body>
-		<script>
-			;(function() {
-	'use strict';
- 
-	class Gallery {
-		constructor(gallery, setup) {
-		this.gallery = gallery;
-		this.setup = setup;
- 
-		this.slider = this.gallery.querySelector('.slider');
-		this.stage = this.gallery.querySelector('.stage');
-		this.items = this.gallery.querySelectorAll('.stage > div');
-		this.count = this.items.length;
- 		this.current = 0;		
-		this.next = 0;			
-		this.pressed = false;	
-		this.start = 0;			
-		this.shift = 0;			
- 		this.init();
-				static defaults = {
-		margin:			10,		
-		visibleItems: 	1,		
-		border:			0,	
-		responsive:		true,	
-		autoScroll:		false,	
-		interval: 		3000,	
-		nav:			true,	
-		dots:			false,	
-		keyControl: 	false,	
-		animated:		false,
-		baseTransition:	0.4,	
-		
-			delayTimer:		250,	
-			limit:			30		
-	};
-	static LEFT = 37;	 
-	static RIGHT = 39;	
- 
-	constructor(gallery, setup) {
-		...
-	}
- 
-	static extend(out) {
-		out = out || {};
-		for (let i = 1; i < arguments.length; i++) {
-			if (!arguments[i]) continue;
-			for (let key in arguments[i]) {
-				if (arguments[i].hasOwnProperty(key)) out[key] = arguments[i][key];
+	<script type="text/javascript">
+		const setting = {
+			setup1: {
+				// включаем постраничную навигацию
+				dots: true,
+				// включаем управление с клавиатуры клавишами навигации "вправо / влево"
+				keyControl: true,
+				// настройки галереи в зависимости от разрешения
+				adaptive: {
+					// настройка работает в диапазоне разрешений 320-560px
+					320: {
+						// одновременно выводится 1 элемент
+						visibleItems: 1,
+						// расстояние между изображениями 5px
+						margin: 5,
+						// запрещаем постраничную навигацию
+						dots: false
+					},
+					// настройка работает в диапазоне разрешений 560-768px
+					560: {
+						// одновременно выводится 1 элемент
+						visibleItems: 2,
+						// расстояние между изображениями 5px
+						margin: 5,
+						// запрещаем постраничную навигацию
+						dots: false
+					},
+					// настройка работает в диапазоне разрешений 768-1024px
+					768: {
+						// одновременно выводятся 2 элемента
+						visibleItems: 3,
+					},
+					// настройка работает в диапазоне разрешений 1024 и выше
+					1024: {
+						// одновременно выводятся 3 элемента
+						visibleItems: 4
+					}
+				}
+			},
+			setup2: {
+				// одновременно выводится 4 элемента
+				visibleItems: 4,
+				// разрешаем постраничную навигацию
+				dots: true,
+				// разрешаем управление с клавиатуры клавишами навигации "вправо / влево"
+				keyControl: true,
+				// выключаем адаптивность
+				responsive: false
 			}
-		}
-		return out;
-	};
- 
-	static xpos(e) {
-		
-		if (e.targetTouches && (e.targetTouches.length >= 1)) {
-			return e.targetTouches[0].clientX;
-		}
-		return e.clientX;
-	}
-}
-		}
-	}
- 
-	const galleries = document.querySelectorAll('.gallery');
-	for (let gallery of galleries) {
-		
-		const setup = gallery.dataset.setting;
-		
-		const slider = new Gallery(gallery, setting[setup]);
-	}
-				init() {
-	this.options = Gallery.extend({}, Gallery.defaults, this.setup);
-	
-	this.setSizeCarousel();
-	this.setCoordinates();
-	this.initControl();
-	if (this.events) return;
-	this.registerEventsHandler();
-}
-})();
- </script>
+		};
+	</script>
 <div class="wrap">
 	<h1>Галерея</h1>
 	<div class="gallery" data-setting="setup1">
