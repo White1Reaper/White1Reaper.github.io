@@ -1,4 +1,4 @@
-img[src^='https://']{
+img{
  max-width:1000px;
  max-height:800px;
 }
