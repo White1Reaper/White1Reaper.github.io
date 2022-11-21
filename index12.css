@@ -2,5 +2,6 @@ img{
  max-width:500px;
  max-height:350px
    position: relative;
-  align: center;
+   margin-left:auto;
+ margin-right:auto;
 }
