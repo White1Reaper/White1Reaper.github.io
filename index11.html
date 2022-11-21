@@ -5,8 +5,14 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 	<body>
-	<script>
-$('.single-item').slick();
+	<script>$(".single-item").slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+
 	</script>
 	<h1>Галерея</h1>
 		<div class="single-item">
