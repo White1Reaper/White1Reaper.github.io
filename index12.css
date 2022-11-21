@@ -3,3 +3,10 @@ img{
  height:350px
       margin-right: 20px;
 }
+.content {
+  margin: auto;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
