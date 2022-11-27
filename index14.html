@@ -68,6 +68,9 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>	
 		
 	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+  console.log('DOM готов!')
+}
 		const mediaQuery = window.matchMedia('(min-width: 1000px)');
 		if (mediaQuery.matches) {
     $(".multiple-items").slick({
@@ -86,7 +89,7 @@
   slidesToShow: 2,
   slidesToScroll: 2
 });
-		}
+		})
   </script>	
   </body>
 </html>
