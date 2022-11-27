@@ -30,3 +30,15 @@ margin-left: 10px;
 
  
 }
+@media (max-width:700px){
+		<script>
+    $(".single-item").slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 2,
+  slidesToScroll: 2
+});
+
+  </script>	
+}
