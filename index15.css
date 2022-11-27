@@ -4,6 +4,7 @@ body {
   color: #fff;
 }
 .content {
+  display: flex;
   margin: auto;
   padding: 30px;
   width: 100%;
