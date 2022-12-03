@@ -36,7 +36,7 @@ if(radio1.value=="2"){
     if(select.value=="3"){
                   b=b*1000000;
                   if(c2.checked){
-                  b=b*15;
+                  b=b*2;
                   }
                                     if(c1.checked){
                   b=b+15000;
