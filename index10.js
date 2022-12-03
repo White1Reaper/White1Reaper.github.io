@@ -8,6 +8,7 @@ let select = document.querySelector('.myselect1');
 const radio1 = document.querySelector('input[name="myradio"]:checked')
 
 let b=1*f1.value;        
+            
         if(select.value=="1"){
           b=b*10;
         }
@@ -39,7 +40,7 @@ if(radio1.value=="2"){
                   b=b*2;
                   }
                                     if(c1.checked){
-                  b=b+15000;
+                  b=b+15000*f1.value;
                   }
         }
     
