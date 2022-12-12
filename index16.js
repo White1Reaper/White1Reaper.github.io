@@ -1,9 +1,9 @@
 
  function clear() {
-  document.getElementByName("message").value = "";
-      document.getElementByName("f-name").value = "";
-  document.getElementByName("Email").value = "";
-}
+  document.getElementById("1").value = "f";
+      document.getElementById("2").value = "g";
+  document.getElementById("3").value = "t";
+ }
 
 function openForm() {
     document.getElementById("myForm").style.display = "block";
