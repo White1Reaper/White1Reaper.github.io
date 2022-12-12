@@ -1,5 +1,5 @@
 
-document.getElementById("clearButton").onclick = function(e) {
+ function clear() {
   document.getElementByName("message").value = "";
       document.getElementByName("f-name").value = "";
   document.getElementByName("Email").value = "";
