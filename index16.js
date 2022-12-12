@@ -1,8 +1,10 @@
 
  function clear() {
-  document.getElementById("1").value = "f";
-      document.getElementById("2").value = "g";
-  document.getElementById("3").value = "t";
+  document.getElementById("1").value = "";
+      document.getElementById("2").value = "";
+  document.getElementById("3").value = "";
+  
+    document.getElementById("myForm").style.display = "block";
  }
 
 function openForm() {
