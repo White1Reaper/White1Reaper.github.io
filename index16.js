@@ -19,7 +19,7 @@ function openForm() {
 var title = 'Hello World';
 var url = 'hello-world.html';
 history.pushState(state, title, url);
- var inputEmail= document.getElementById("1");
+ var inputEmail= document.getElementById("2");
  inputEmail.value=localStorage.getItem('email')
 }
  function closeForm() {
@@ -29,6 +29,6 @@ var title = 'Hello World';
 var url = 'index14.html';
  history.replaceState(null, null, url);
 history.pushState(null, null, url);
-  var inputEmail= document.getElementById("1");
+  var inputEmail= document.getElementById("2");
 localStorage.setItem("email", inputEmail.value);
  } 
