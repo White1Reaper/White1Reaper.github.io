@@ -23,11 +23,6 @@ function openForm() {
 }
  function closeForm() {
     document.getElementById("myForm").style.display = "none";
-var state = { 'page_id': 1, 'user_id': 5 };
-var title = 'Hello World';
-var url = 'index14.html';
- history.replaceState(null, null, url);
-history.pushState(null, null, url);
  } 
 function saveForm(){
 		  var inputName= document.getElementById("1");
