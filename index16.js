@@ -18,8 +18,9 @@ function openForm() {
  var state = { 'page_id': 1, 'user_id': 5 };
 var title = 'Hello World';
 var url = 'hello-world.html';
-
 history.pushState(state, title, url);
+ var inputEmail= document.getElementById("1");
+ inputEmail.value=localStorage.getItem('email')
 }
  function closeForm() {
     document.getElementById("myForm").style.display = "none";
