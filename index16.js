@@ -1,11 +1,3 @@
-		document.addEventListener('DOMContentLoaded', function () {
-				      var inputName= document.getElementById("1");
- inputName.value=localStorage.getItem('name');
-      var inputEmail= document.getElementById("2");
- inputEmail.value=localStorage.getItem('email');
-			      var inputTextarea= document.getElementById("3");
- inputTextarea.value=localStorage.getItem('textarea');
-})
  function send() {
   document.getElementById("1").value = "";
       document.getElementById("2").value = "";
@@ -18,8 +10,12 @@
 function openForm() {
     document.getElementById("myForm").style.display = "block";
 
-	  var inputEmail= document.getElementById("2");
-	localStorage.setItem("email", inputEmail.value);
+					      var inputName= document.getElementById("1");
+ inputName.value=localStorage.getItem('name');
+      var inputEmail= document.getElementById("2");
+ inputEmail.value=localStorage.getItem('email');
+			      var inputTextarea= document.getElementById("3");
+ inputTextarea.value=localStorage.getItem('textarea');
 }
  function closeForm() {
     document.getElementById("myForm").style.display = "none";
