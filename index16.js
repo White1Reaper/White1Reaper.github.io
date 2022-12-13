@@ -1,10 +1,10 @@
 		document.addEventListener('DOMContentLoaded', function () {
 			      var inputName= document.getElementById("1");
- inputName.value=localStorage.getItem('Name');
+ inputName.value=localStorage.getItem('name');
       var inputEmail= document.getElementById("2");
  inputEmail.value=localStorage.getItem('email');
 			      var inputTextarea= document.getElementById("3");
- inputTextarea.value=localStorage.getItem('Textarea');
+ inputTextarea.value=localStorage.getItem('textarea');
 })
  function send() {
   document.getElementById("1").value = "";
@@ -26,9 +26,9 @@ function openForm() {
  } 
 function saveForm(){
 		  var inputName= document.getElementById("1");
-	localStorage.setItem("Name", inputName.value);
+	localStorage.setItem("name", inputName.value);
 		  var inputEmail= document.getElementById("2");
 	localStorage.setItem("email", inputEmail.value);
 		  var inputTextarea= document.getElementById("3");
-	localStorage.setItem("Textarea", inputTextarea.value);
+	localStorage.setItem("textarea", inputTextarea.value);
 }
