@@ -7,7 +7,9 @@
 var title = 'Hello World';
 var url = 'index14.html';
 
-history.pushState(state, title, url);
+ history.replaceState(null, null, 'hello');
+history.pushState(null, null, 'hello');
+
     document.getElementById("myForm").style.display = "block";
  }
 
@@ -24,6 +26,6 @@ history.pushState(state, title, url);
 var state = { 'page_id': 1, 'user_id': 5 };
 var title = 'Hello World';
 var url = 'index14.html';
-
-history.pushState(state, title, url);
+ history.replaceState(null, null, 'hello');
+history.pushState(null, null, 'hello');
  } 
