@@ -1,10 +1,10 @@
 		document.addEventListener('DOMContentLoaded', function () {
 			      var inputName= document.getElementById("1");
- inputName.value=localStorage.getItem('Name')
+ inputName.value=localStorage.getItem('Name');
       var inputEmail= document.getElementById("2");
- inputEmail.value=localStorage.getItem('email')
+ inputEmail.value=localStorage.getItem('email');
 			      var inputTextarea= document.getElementById("3");
- inputTextarea.value=localStorage.getItem('Textarea')
+ inputTextarea.value=localStorage.getItem('Textarea');
 })
  function send() {
   document.getElementById("1").value = "";
