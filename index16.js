@@ -28,4 +28,6 @@ var title = 'Hello World';
 var url = 'index14.html';
  history.replaceState(null, null, url);
 history.pushState(null, null, url);
+  var inputEmail= document.getElementById("email");
+localStorage.setItem("email", inputEmail.value);
  } 
