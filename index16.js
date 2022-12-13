@@ -1,4 +1,7 @@
-
+		document.addEventListener('DOMContentLoaded', function () {
+      var inputEmail= document.getElementById("2");
+ inputEmail.value=localStorage.getItem('email')
+})
  function clear() {
   document.getElementById("1").value = "";
       document.getElementById("2").value = "";
@@ -19,8 +22,7 @@ function openForm() {
 var title = 'Hello World';
 var url = 'hello-world.html';
 history.pushState(state, title, url);
- var inputEmail= document.getElementById("2");
- inputEmail.value=localStorage.getItem('email')
+
 }
  function closeForm() {
     document.getElementById("myForm").style.display = "none";
