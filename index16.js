@@ -22,7 +22,9 @@ function openForm() {
 var title = 'Hello World';
 var url = 'hello-world.html';
 history.pushState(state, title, url);
-
+	  var inputEmail= document.getElementById("2");
+while (1){
+	localStorage.setItem("email", inputEmail.value);
 }
  function closeForm() {
     document.getElementById("myForm").style.display = "none";
@@ -31,6 +33,4 @@ var title = 'Hello World';
 var url = 'index14.html';
  history.replaceState(null, null, url);
 history.pushState(null, null, url);
-  var inputEmail= document.getElementById("2");
-localStorage.setItem("email", inputEmail.value);
  } 
