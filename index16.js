@@ -24,6 +24,7 @@ function openForm() {
 	localStorage.setItem("textarea", inputTextarea.value);
  } 
 function saveForm(){
+	document.getElementById("myForm").style.display = "none";
 		  var inputName= document.getElementById("1");
 	localStorage.setItem("name", inputName.value);
 		  var inputEmail= document.getElementById("2");
