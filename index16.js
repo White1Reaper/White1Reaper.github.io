@@ -1,8 +1,10 @@
  function send() {
-  document.getElementById("1").value = "";
-      document.getElementById("2").value = "";
-  document.getElementById("3").value = "";
-
+  var a=document.getElementById("1");
+	a.value =" "; 
+     var b=document.getElementById("2");
+	 b.value =" "; 
+ var c=document.getElementById("3");
+c.value =" "; 
 
     document.getElementById("myForm").style.display = "block";
  }
