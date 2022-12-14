@@ -1,5 +1,5 @@
  function send() {
- document.getElementsByName('myform')[0].reset();
+document.getElementById("client").reset();
     document.getElementById("myform").style.display = "block";
  }
 
