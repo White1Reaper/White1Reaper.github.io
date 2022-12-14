@@ -1,7 +1,6 @@
  function send() {
-document.getElementById("1").value = '';
-
-    document.getElementById("myForm").style.display = "block";
+ document.getElementsByName('myform')[0].reset();
+    document.getElementById("myform").style.display = "block";
  }
 
 function openForm() {
