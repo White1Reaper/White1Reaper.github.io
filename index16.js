@@ -1,5 +1,5 @@
  function send() {
-document.getElementById("client").reset();
+	 $('#myform')[0].reset();
     document.getElementById("myform").style.display = "block";
  }
 
