@@ -1,8 +1,34 @@
- function send() {
-var element = document.getElementById("client").
-element.reset()
-    document.getElementById("myform").style.display = "block";
- }
+    $("#send1").click(function () {
+        var slapform = new Slapform();
+        $("#lete").prop("disabled", true);
+        slapform.submit({
+            data: {
+                checkbox: localStorage.getItem("check"),
+                email: localStorage.getItem("email"),
+                message: localStorage.getItem("mes"),
+                name: localStorage.getItem("name")
+            },
+            form: "iWIebCaiz"
+        }).then(function () {
+            alert("Ваше сообщение отправлено");
+        }).catch(function () {
+            alert("Ошибка отправки, попробуйте снова");
+        });
+        document.querySelector("#name_polz").value = "";
+        document.querySelector("#email_polz").value = "";
+        document.querySelector("#mes").value = "";
+        document.querySelector("#check").checked = false;
+        localStorage.clear();
+        return false;
+    });
+
+    addEventListener("popstate", function () {
+        $("#myForm").animate({opacity: 0}, 198, function () {
+            $(this).css("display", "none");
+            $("#myOverlay").fadeOut(297);
+            openHome();
+        });
+    }, false);
 
 function openForm() {
     document.getElementById("myForm").style.display = "block";
