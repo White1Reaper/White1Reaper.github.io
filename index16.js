@@ -39,9 +39,7 @@ function openForm() {
  inputEmail.value=localStorage.getItem('email');
 			      var inputTextarea= document.getElementById("3");
  inputTextarea.value=localStorage.getItem('textarea');
-	        document.getElementById("1").value = "";
-        document.getElementById("2").value = "";
-        document.getElementById("3").value = "";
+
 }
  function closeForm() {
     document.getElementById("myForm").style.display = "none";
