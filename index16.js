@@ -5,7 +5,7 @@
             data: {
                 checkbox: localStorage.getItem("check"),
                 email: localStorage.getItem("email"),
-                message: localStorage.getItem("mes"),
+                message: localStorage.getItem("message"),
                 name: localStorage.getItem("name")
             },
             form: "iWIebCaiz"
@@ -59,3 +59,23 @@ function saveForm(){
 	localStorage.setItem("textarea", inputTextarea.value);
 
 }
+    $("#1, #2, #3, #check").change(function () {
+        var nam = $("#1").val();
+        var email = $("#2").val();
+        var mes = $("3").val();
+        var check = $("#check").prop("checked");
+        localStorage.setItem("name", nam);
+        localStorage.setItem("email", email);
+        localStorage.setItem("mes", mes);
+        if (check) {
+            localStorage.setItem("check", true);
+        } else {
+            localStorage.setItem("check", false);
+        }
+        if (nam.length > 0 && email.length > 0 && mes.length > 0 && check) {
+            $("#lete").prop("disabled", false);
+        } else {
+            $("#lete").prop("disabled", true);
+        }
+        return false;
+    });
