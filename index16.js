@@ -10,13 +10,13 @@
             },
             form: "iWIebCaiz"
         }).then(function () {
-            alert("Ваше сообщение отправлено");
+            alert("successful sending!");
         }).catch(function () {
-            alert("Ошибка отправки, попробуйте снова");
+            alert("sending failed");
         });
-        document.querySelector("#name_polz").value = "";
-        document.querySelector("#email_polz").value = "";
-        document.querySelector("#mes").value = "";
+        document.getElementById("1").value = "";
+        document.getElementById("2").value = "";
+        document.getElementById("3").value = "";
         document.querySelector("#check").checked = false;
         localStorage.clear();
         return false;
