@@ -2,12 +2,7 @@
 @media(min-width:960px){
 	
 
-#nav > ul > li{
-	float: left;
-	position: relative;
-}
-	
-#nav li .second{
+.second{
 	display: none;
 	
 }
