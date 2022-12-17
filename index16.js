@@ -24,13 +24,6 @@ $("#send1").click(function () {
         return false;
     });
 
-    addEventListener("popstate", function () {
-        $("#myForm").animate({opacity: 0}, 198, function () {
-            $(this).css("display", "none");
-            $("#myOverlay").fadeOut(297);
-            openHome();
-        });
-    }, false);
 
 function openForm() {
 						      var inputName= document.getElementById("1");
@@ -41,7 +34,11 @@ function openForm() {
  inputTextarea.value=localStorage.getItem('mes');
 
     document.getElementById("myForm").style.display = "block";
-    history.pushState({page: 2}, "Form", "?form");
+	  var state = { 'page_id': 2, 'user_id': 5 };
+var title = 'Hello World';
+var url = 'index14.html_form';
+history.pushState(state, title, url);
+	 
 
 }
  function closeForm() {
