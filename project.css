@@ -10,7 +10,7 @@
 #nav:hover .second, li {
 	display: block;
 }
-	#nav:hover #nav{
+	#nav:hover .second{
 	background: #2F718E;
 }
 	body{
