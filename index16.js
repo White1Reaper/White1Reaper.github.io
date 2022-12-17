@@ -5,8 +5,8 @@
             data: {
                 checkbox: localStorage.getItem("check"),
                 email: localStorage.getItem("email"),
-                message: localStorage.getItem("message"),
-                name: localStorage.getItem("name")
+                message: localStorage.getItem("mes"),
+                name: localStorage.getItem("nam")
             },
             form: "iWIebCaiz"
         }).then(function () {
@@ -14,11 +14,7 @@
         }).catch(function () {
             alert("sending failed");
         });
-        document.getElementById("1").value = "";
-        document.getElementById("2").value = "";
-        document.getElementById("3").value = "";
-        document.querySelector("#check").checked = false;
-        localStorage.clear();
+
         return false;
     });
 
@@ -43,31 +39,17 @@ function openForm() {
 }
  function closeForm() {
     document.getElementById("myForm").style.display = "none";
-	 		  var inputName= document.getElementById("1");
-	localStorage.setItem("name", inputName.value);
-		  var inputEmail= document.getElementById("2");
-	localStorage.setItem("email", inputEmail.value);
-		  var inputTextarea= document.getElementById("3");
-	localStorage.setItem("textarea", inputTextarea.value);
- } 
-function saveForm(){
-	document.getElementById("myForm").style.display = "none";
-		  var inputName= document.getElementById("1");
-	localStorage.setItem("name", inputName.value);
-		  var inputEmail= document.getElementById("2");
-	localStorage.setItem("email", inputEmail.value);
-		  var inputTextarea= document.getElementById("3");
-	localStorage.setItem("textarea", inputTextarea.value);
 
-}
+ } 
+
     $("#1, #2, #3, #check").change(function () {
         var nam = $("#1").val();
         var email = $("#2").val();
         var mes = $("3").val();
         var check = $("#check").prop("checked");
-        localStorage.setItem("name", nam);
-        localStorage.setItem("email", email);
-        localStorage.setItem("mes", mes);
+        localStorage.setItem("1", nam);
+        localStorage.setItem("2", email);
+        localStorage.setItem("3", mes);
         if (check) {
             localStorage.setItem("check", true);
         } else {
