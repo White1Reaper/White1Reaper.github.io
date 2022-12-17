@@ -7,7 +7,7 @@
 	
 }
 
-#nav li:hover .second{
+#nav:hover .second{
 	display: block;
 }
 	body{
