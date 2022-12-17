@@ -36,17 +36,18 @@ $("#send1").click(function () {
     }, false);
 
 function openForm() {
-    document.getElementById("myForm").style.display = "block";
- var state = { 'page_id': 1, 'user_id': 5 };
-var title = 'Hello World';
-var url = 'hello-world.html';
-history.pushState(state, title, url);
-					      var inputName= document.getElementById("1");
+						      var inputName= document.getElementById("1");
  inputName.value=localStorage.getItem('nam');
       var inputEmail= document.getElementById("2");
  inputEmail.value=localStorage.getItem('email');
 			      var inputTextarea= document.getElementById("3");
  inputTextarea.value=localStorage.getItem('mes');
+
+    document.getElementById("myForm").style.display = "block";
+ var state = { 'page_id': 1, 'user_id': 5 };
+var title = 'Hello World';
+var url = 'hello-world.html';
+history.pushState(state, title, url);
 
 }
  function closeForm() {
