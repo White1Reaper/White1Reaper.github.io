@@ -13,7 +13,7 @@
 #nav:hover .second > li {
 	display: block;
 }	
-	.menu li a:hover .menu > li{
+	.menu li: hover{
 	background: #FF4500;
 }
 	body{
