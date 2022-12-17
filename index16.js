@@ -41,7 +41,7 @@ function openForm() {
     document.getElementById("myForm").style.display = "none";
 
  } 
-
+    addEventListener("popstate", function () {
     $("#1, #2, #3, #check").change(function () {
         var nam = $("#1").val();
         var email = $("#2").val();
@@ -62,3 +62,4 @@ function openForm() {
         }
         return false;
     });
+});
