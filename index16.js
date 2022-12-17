@@ -42,11 +42,11 @@ var title = 'Hello World';
 var url = 'hello-world.html';
 history.pushState(state, title, url);
 					      var inputName= document.getElementById("1");
- inputName.value=localStorage.getItem('name');
+ inputName.value=localStorage.getItem('nam');
       var inputEmail= document.getElementById("2");
  inputEmail.value=localStorage.getItem('email');
 			      var inputTextarea= document.getElementById("3");
- inputTextarea.value=localStorage.getItem('textarea');
+ inputTextarea.value=localStorage.getItem('mes');
 
 }
  function closeForm() {
