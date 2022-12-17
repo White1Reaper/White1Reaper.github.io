@@ -43,7 +43,7 @@ function openForm() {
     document.getElementById("myForm").style.display = "block";
  var state = { 'page_id': 1, 'user_id': 5 };
 var title = 'Hello World';
-var url = 'hello-world.html';
+var url = 'index14.html_form';
 history.pushState(state, title, url);
 
 }
