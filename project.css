@@ -47,7 +47,7 @@
 		vertical-align: middle;
 	}
 	
-.menuadm > li{
+.menuadm > li > a{
 	float: left;
 	width: 180px;
 	position: relative;
@@ -62,8 +62,17 @@
 	text-align: center;
 	text-decoration: none;
 }
-#nav li a:hover{
+.menuadm li a:hover{
 	background: #2F718E;
+}
+
+.menuadm li .second{
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+.menuadm li:hover .second{
+	display: block;
 }
 	.menu {
 		display: inline-block;
