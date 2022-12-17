@@ -47,6 +47,11 @@
 		vertical-align: middle;
 	}
 	
+.menuadm > li{
+	float: left;
+	width: 180px;
+	position: relative;
+}
 	.menu {
 		display: inline-block;
 		margin: 0;
