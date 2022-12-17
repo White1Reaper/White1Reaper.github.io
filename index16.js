@@ -1,4 +1,13 @@
-    $("#send1").click(function () {
+$(document).on("input",function(ev){
+          var nam = $("#1").val();
+        var email = $("#2").val();
+        var mes = $("3").val();
+        var check = $("#check").prop("checked");
+        localStorage.setItem("1", nam);
+        localStorage.setItem("2", email);
+        localStorage.setItem("3", mes);
+});    
+$("#send1").click(function () {
         var slapform = new Slapform();
         $("#lete").prop("disabled", true);
         slapform.submit({
