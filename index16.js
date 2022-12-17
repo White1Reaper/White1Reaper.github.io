@@ -8,7 +8,7 @@
                 message: localStorage.getItem("mes"),
                 name: localStorage.getItem("nam")
             },
-            form: "iWIebCaiz"
+            form: "vog0f58Vj"
         }).then(function () {
             alert("successful sending!");
         }).catch(function () {
@@ -28,7 +28,10 @@
 
 function openForm() {
     document.getElementById("myForm").style.display = "block";
-
+ var state = { 'page_id': 1, 'user_id': 5 };
+var title = 'Hello World';
+var url = 'hello-world.html';
+history.pushState(state, title, url);
 					      var inputName= document.getElementById("1");
  inputName.value=localStorage.getItem('name');
       var inputEmail= document.getElementById("2");
