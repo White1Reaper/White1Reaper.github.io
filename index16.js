@@ -41,10 +41,7 @@ function openForm() {
  inputTextarea.value=localStorage.getItem('mes');
 
     document.getElementById("myForm").style.display = "block";
- var state = { 'page_id': 1, 'user_id': 5 };
-var title = 'Hello World';
-var url = 'index14.html_form';
-history.pushState(state, title, url);
+    history.pushState({page: 2}, "Form", "?form");
 
 }
  function closeForm() {
