@@ -8,7 +8,7 @@
 }
 
 #nav:hover .second, li {
-	display: block;
+	display: absolute;
 }
 	#nav:hover .second{
 	background: #2F718E;
