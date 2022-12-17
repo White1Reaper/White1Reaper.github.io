@@ -47,33 +47,7 @@
 		vertical-align: middle;
 	}
 	
-.menuadm > li > a{
-	float: left;
-	width: 180px;
-	position: relative;
-}
 
-.menuadm li a{
-	display: block;
-	background: #90DA93;
-	border: 1px solid #060A13;
-	color: #060A13;
-	padding: 8px;
-	text-align: center;
-	text-decoration: none;
-}
-.menuadm li a:hover{
-	background: #2F718E;
-}
-
-.menuadm li {
-	display: none;
-	position: absolute;
-	top: 100%;
-}
-.menuadm li:hover .second{
-	display: block;
-}
 	.menu {
 		display: inline-block;
 		margin: 0;
