@@ -52,6 +52,19 @@
 	width: 180px;
 	position: relative;
 }
+
+.menuadm li a{
+	display: block;
+	background: #90DA93;
+	border: 1px solid #060A13;
+	color: #060A13;
+	padding: 8px;
+	text-align: center;
+	text-decoration: none;
+}
+#nav li a:hover{
+	background: #2F718E;
+}
 	.menu {
 		display: inline-block;
 		margin: 0;
