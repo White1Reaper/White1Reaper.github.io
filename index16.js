@@ -1,5 +1,10 @@
 
 $("#send1").click(function () {
+	        document.getElementById("1").value = "";
+        document.getElementById("2").value = "";
+        document.getElementById("3").value = "";
+        document.querySelector("#check").checked = false;
+        localStorage.clear();
         var slapform = new Slapform();
         $("#lete").prop("disabled", true);
         slapform.submit({
