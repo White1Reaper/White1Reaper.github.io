@@ -7,10 +7,12 @@
 	
 }
 
-#nav:hover .second, li {
+#nav:hover .second {
 	display: block;
 }
-	
+#nav:hover .second > li {
+	display: block;
+}	
 	.menu li a:hover .menu > li{
 	background: #FF4500;
 }
