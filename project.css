@@ -1,0 +1,225 @@
+/* 1. Шапка сайта + навигационное меню */
+@media(min-width:960px){
+	
+	body{
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-size:smaller;
+		margin: 0;
+		width: 100%;
+	}
+	
+	.header{
+		background: url('project_files/video.png');
+		background-size: cover;
+		margin-bottom: 30px;
+		width: 100%;
+	}
+	.bgvideo {
+		position: absolute;
+		right: 0;
+		left: 0;
+		min-width: 100%;
+		width: auto;
+		height: 40vw;
+		z-index: -9999;
+		background-color: rgba(0, 0, 0, 0.50);
+		object-fit: cover;
+		filter: brightness(7%);
+		margin: 0% 0% -10.5% 0%;
+		background-origin: padding-box;
+	}
+	#background_photo{
+		filter: blur(1px);
+		position: absolute;
+		height: 50vw;
+	}
+	  
+	.container{
+		text-align: center;
+		position: relative;
+	}
+	#logo{
+		margin: -0.4vw 2vw 0vw 2vw;
+		border: 0;
+		width: 150px;
+		height: 50px;
+		vertical-align: middle;
+	}
+	
+	.menu {
+		display: inline-block;
+		margin: 0;
+		vertical-align: middle;
+		padding: 0;
+		width: auto;
+		margin-left: 1.7vw;
+	}
+	ul.menu {
+	  display: inline-block;
+	}
+	ul.menu li {
+		display: inline;
+		padding: 0; 
+		margin-left: 3vw;
+	}
+	.header li{
+		padding: 0;
+		list-style: none;
+	}
+	.header a{
+		color: white;
+		text-decoration: none;
+	}
+
+	.textcols{
+		margin-top: 70px;
+		padding: 0;
+		text-align: center;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.item_1{
+		vertical-align: middle;
+		height: 50%;
+	}
+	ul.item_1{
+		padding-left: 60px;
+	}
+	.textcols-item{
+		width: 50%;
+		height: 300px;
+		vertical-align: middle;
+		float: left;
+	}
+	.shapka{
+		text-align: center;
+	}
+	#sup{
+		font-size:50px;
+		font-weight: bold;
+		text-align: left;
+		float: left;
+	}
+	#sup_text{
+		font-size: 15px;
+		float: left;
+		text-align: left;
+		padding: 20px 0px 50px 0px;
+	}
+	#text_col{
+		vertical-align: middle;
+		font-size:xx-large;
+		font-weight: bold;
+	}
+	#cup{
+		width: 40px;
+		height: 40px;
+	}
+	.tarif{
+		float: left;
+		margin-top: 20px;
+	}
+	#tarif{
+		text-indent: 30px;
+		border: 2px solid #ff4f00;
+		padding: 20px 70px 20px 70px;
+		border-radius: 5px;
+	}
+	#block_1{
+		float: left;
+		margin: 0 auto;
+		width: 30%;
+		text-align: left;
+		border-left: 4px solid #ff4f00;
+		padding: 0px 0px 0px 7px;
+		vertical-align: middle;
+	}
+	#block_2{
+		margin-top: 50px;
+		float: left;
+		width: 30%;
+		text-align: left;
+		border-left: 4px solid #ff4f00;
+		padding: 0px 0px 0px 7px;
+		vertical-align: middle;
+	}
+
+	/* 2. Блок: 13 лет  */
+	.drupal_sup{
+		margin: 20vw 0vw 10vw 0vw;
+		float: left;
+	}
+	.drup_sup_1{
+		float: left;
+		width: 40%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.sup_1_text{
+		font-size:50px;
+		font-weight: bold;
+		text-align: left;
+	}
+	.drupal_sup li{
+		padding: 0;
+		list-style: none;
+	}
+	.drupal a{
+		margin-top: 10px;
+	}
+	
+	.drup_sup_str{
+		float: left;
+		padding: 0vw 0vw 3vw 0vw;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	#comp_1{
+		padding-bottom: 1.5vw;
+	}
+	#sup_str_text{
+		width: 15%;
+		float: left;
+		margin: 0;
+		margin-right: 10%;
+	}
+
+	/* 3. Блок - Поддержка от Drupal */
+	.sup_from_drupal-coder_header{
+		
+		text-align: center;
+	}
+	#sup_from_drupal-coder_header_text1{
+		text-align: center;
+		font-size:50px;
+		font-weight: bold;
+	}
+	#sup_from_drupal-coder_header_text2{
+		text-align: center;
+		margin-bottom: 5vw;
+		font-size:50px;
+		font-weight: bold;
+	}
+	.sup_from_drupal-coder li{
+		padding: 0;
+		list-style: none;
+	}
+	.sup_from_drupal-coder_elem{
+		float: left;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.sup_from_drupal-coder_el{
+		float:left;
+		width: 25%;
+		margin: 0;
+	}
+	#sup_from_drupal-coder_el_header{
+		font-weight:bold;
+		font-size: 15px;
+	}
+	#sup_img{
+		float: right;
+	}
+}
