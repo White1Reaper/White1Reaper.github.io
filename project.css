@@ -11,8 +11,8 @@
 	display: block;
 }
 	
-	.menu li a:hover{
-	background: #2F718E;
+	.menu li a:hover .menu > li{
+	background: #FF4500;
 }
 	body{
 		font-family: 'Montserrat';
