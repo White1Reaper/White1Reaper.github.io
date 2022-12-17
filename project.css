@@ -8,9 +8,10 @@
 }
 
 #nav:hover .second, li {
-	display: absolute;
+	display: block;
 }
-	#nav:hover .second{
+	
+	.menu li a:hover{
 	background: #2F718E;
 }
 	body{
