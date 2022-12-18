@@ -24,6 +24,10 @@
 margin-left:50px;
 display:inline-block;
 }
+ins, h5{
+	color:white;
+}
+
 .elem-form{
 	border:4px inset black;
  background:black;	 
