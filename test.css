@@ -6,3 +6,7 @@
 margin-left:50px;
 display:inline-block;
 }
+textarea, input{
+	border:4px inset black;
+ background:black;	 
+}
