@@ -5,9 +5,12 @@
 .second{
 	display: none;
 	position: absolute;
+	margin-left:90px;
 }
 .second > li{
-	position: absolute;
+	position: static;
+	display: block;
+
 	}
 #nav:hover .second {
 	display: block;
