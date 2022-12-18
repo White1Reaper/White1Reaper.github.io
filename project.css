@@ -243,4 +243,8 @@
 	#sup_img{
 		float: right;
 	}
+footer{
+	width:100%;
+	background:#000000;
+	height:1500px;
 }
