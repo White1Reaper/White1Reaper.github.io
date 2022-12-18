@@ -6,7 +6,9 @@
 	display: none;
 	
 }
-
+.second > li{
+	position: absolute;
+	}
 #nav:hover .second {
 	display: block;
 }
