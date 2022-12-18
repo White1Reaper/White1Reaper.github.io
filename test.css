@@ -6,17 +6,25 @@
 margin-left:50px;
 display:inline-block;
 }
-textarea, input{
+.elem-form{
 	border:4px inset black;
  background:black;	 
+ width:300px
 }
 h1, h2, h3{
  color:white;
 }
 #send1 {
+ border:2px inset #ff5722;
 	border-radius:44px; 
  background:#FF5722;	 
  width:500px;
  height:50px;
- margin-bottom:100px
+ margin-bottom:100px;
+ color: #0051ff;
+font-weight:1000;
+}
+#send1:hover {
+
+ background: none;
 }
