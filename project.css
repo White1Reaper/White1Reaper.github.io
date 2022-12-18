@@ -4,7 +4,7 @@
 
 .second{
 	display: none;
-	
+	position: absolute;
 }
 .second > li{
 	position: absolute;
