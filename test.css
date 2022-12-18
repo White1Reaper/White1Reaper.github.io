@@ -10,3 +10,13 @@ textarea, input{
 	border:4px inset black;
  background:black;	 
 }
+h1, h2, h3{
+ color:white;
+}
+#send1 {
+	border-radius:44px; 
+ background:#FF5722;	 
+ width:500px;
+ height:50px;
+ margin-bottom:100px
+}
