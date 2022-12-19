@@ -20,9 +20,10 @@
 	width:100%;
 	background-image: url('project_files/5137894.jpg')
 }
-.form1{
-margin-left:50px;
-display:inline-block;
+.footer1{
+margin-left:50px; 
+ display:flex;
+justify-content: space-around; 
 }
 ins, h5{
 	color:white;
