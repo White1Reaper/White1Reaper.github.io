@@ -17,11 +17,12 @@
 .facebook a:hover {background: #3b5998; color: #fff;}
 .vk a:hover {background: #5d84ae; color: #fff;}
 .footer{
+  display:flex;
+ flex-direction: column;
 	width:100%;
 	background-image: url('project_files/5137894.jpg')
 }
 .footer1{
-margin-left:50px; 
  display:flex;
 justify-content: space-around; 
 }
