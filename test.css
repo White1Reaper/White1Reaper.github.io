@@ -26,8 +26,11 @@
  display:flex;
 justify-content: space-around; 
 }
-ins, h5{
+ins{
 	color:white;
+}
+h5{
+	color:#999999;
 }
 
 .elem-form{
