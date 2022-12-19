@@ -1,11 +1,12 @@
+body {
+  background: #3498db;
+  color: #fff;
+}
 .content {
-  display: flex;
-  
-	flex-direction:column;
   margin: auto;
   padding: 30px;
   width: 100%;
-  max-width: 900px;
+  max-width: 600px;
   box-sizing: border-box;
 }
 h3 {
@@ -17,11 +18,4 @@ h3 {
   padding: 2%;
   position: relative;
   text-align: center;
-}
-img {
-margin-left: 10px;
-  width: 200px;
-  height: 100px;
-
- 
 }
