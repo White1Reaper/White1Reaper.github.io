@@ -49,6 +49,6 @@ h1, h2, h3{
 font-weight:1000;
 }
 #send1:hover {
-
+transition: .2s;
  background: none;
 }
