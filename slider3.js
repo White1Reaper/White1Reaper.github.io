@@ -1,4 +1,4 @@
-$(".multiple-items").slick({
+$(".single-item").slick({
   dots: true,
   infinite: true,
   speed: 500,
