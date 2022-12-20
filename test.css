@@ -38,7 +38,7 @@ h5{
 }
 .cont{
 	  display:flex;
- flex-direction: column;
+
 }
 .elem-form{
 	border:4px inset black;
