@@ -36,7 +36,10 @@ ins{
 h5{
 	color:#999999;
 }
-
+.cont{
+	  display:flex;
+ flex-direction: column;
+}
 .elem-form{
 	border:4px inset black;
  background:black;	 
