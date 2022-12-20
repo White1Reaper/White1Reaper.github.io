@@ -21,3 +21,9 @@ h3, h5{
   text-align: center;
 	font-size:small;
 }
+img{
+	margin:auto;
+	margin-top:20px;
+	display:flex;
+	margin-bottom:-20px;
+}
