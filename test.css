@@ -113,8 +113,8 @@ transition: .2s;
 .custom-checkbox:disabled+label::before {
   background-color: #e9ecef;
 }
-
 img{
-position:absolute;
+    position:absolute;
+    clip:rect(0,130px,79px,0);
+ height:100px
 }
-
