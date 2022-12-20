@@ -114,5 +114,7 @@ transition: .2s;
   background-color: #e9ecef;
 }
 
-
+img{
+position:absolute;
+}
 
