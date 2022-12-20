@@ -36,7 +36,8 @@ h5{
 .elem-form{
 	border:4px inset black;
  background:black;	 
- width:300px
+ width:300px;
+	 color:white;
 }
 h1, h2, h3{
  color:white;
