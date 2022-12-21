@@ -1,1 +1,15 @@
 
+.content{
+    margin:20px;
+}
+.content > h1{
+        display:flex;
+    justify-content: center;
+}
+.comp-elem > img{
+    max-height:150px;
+}
+.compet{
+    display:flex;
+    justify-content: space-around;
+}
