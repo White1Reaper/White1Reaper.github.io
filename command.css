@@ -42,10 +42,13 @@ font-size: x-large;
     margin-top:7px;
 }
 #send1 {
+    display: flex;
+    justify-content: center;
  border:2px inset black;
  background:none;	 
  width:350px;
- height:100px;
+ height:70px;
+    font-weight:1000;
  margin: auto;
  color: orange;
 font-weight:1000;
