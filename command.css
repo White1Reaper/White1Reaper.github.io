@@ -41,3 +41,16 @@ font-size: x-large;
   font-size: x-small;
     margin-top:7px;
 }
+#send1 {
+ border:2px inset black;
+ background:none;	 
+ width:350px;
+ height:100px;
+ margin: auto;
+ color: orange;
+font-weight:1000;
+}
+#send1:hover {
+transition: .2s;
+ background: blue;
+}
