@@ -1,4 +1,5 @@
 
+
 .content{
     margin:20px;
 }
@@ -12,4 +13,22 @@
 .compet{
     display:flex;
     justify-content: space-around;
+}
+.members{
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+      
+img, .member{
+    max-width:280px;    
+    
+}
+img{
+    margin-top:19px;
+    max-height:280px;
+}
+.member{
+    margin-left:100px;
 }
