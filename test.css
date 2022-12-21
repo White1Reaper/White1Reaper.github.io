@@ -19,6 +19,10 @@
 footer{
 	position: relative;
 }
+.text-s{
+color: white;
+	margin-top:20px;
+}
 .footer{
   display:flex;
  flex-direction: column;
