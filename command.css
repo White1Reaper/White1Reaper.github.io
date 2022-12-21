@@ -1,6 +1,6 @@
 
 
-.content{
+.content123{
     margin:20px;
 }
 .content > h1{
@@ -21,11 +21,11 @@
   align-content: space-between;
 }
       
-img, .member{
+.content123 > img, .member{
     max-width:280px;    
     
 }
-img{
+.content123 > img{
     margin-top:19px;
     max-height:280px;
 }
@@ -50,7 +50,7 @@ font-size: x-large;
  height:30px;
     font-weight:1000;
       margin-top:100px;
- margin: auto;
+ margin-top: 100px;
  color: orange;
 font-weight:1000;
 }
