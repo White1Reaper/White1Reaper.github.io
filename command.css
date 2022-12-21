@@ -1,6 +1,6 @@
 
 
-.content123{
+.content{
     margin:20px;
 }
 .content > h1{
@@ -21,11 +21,11 @@
   align-content: space-between;
 }
       
-.content123 > img, .member{
+img, .member{
     max-width:280px;    
     
 }
-.content123 > img{
+.content > img{
     margin-top:19px;
     max-height:280px;
 }
