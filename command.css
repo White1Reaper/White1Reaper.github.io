@@ -25,7 +25,7 @@ img, .member{
     max-width:280px;    
     
 }
-.content > img{
+.member > img{
     margin-top:19px;
     max-height:280px;
 }
@@ -41,7 +41,7 @@ font-size: x-large;
   font-size: x-small;
     margin-top:7px;
 }
-#send1 {
+#send2 {
     display: flex;
     justify-content: center;
  border:2px inset black;
@@ -54,7 +54,7 @@ font-size: x-large;
  color: orange;
 font-weight:1000;
 }
-#send1:hover {
+#send2:hover {
 transition: .2s;
  background: blue;
 }
