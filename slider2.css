@@ -1,9 +1,8 @@
-body {
-  background: cyan;
-}
-.content {
+
+.content1 {
   display: flex;
   
+  background: cyan;
 	flex-direction:column;
   margin: auto;
 	background:white;
