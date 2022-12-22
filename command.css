@@ -1,9 +1,9 @@
 
 
-.content{
+.content2{
     margin:20px;
 }
-.content > h1{
+.content2 > h1{
         display:flex;
     justify-content: center;
 }
