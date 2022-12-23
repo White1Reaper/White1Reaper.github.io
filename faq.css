@@ -1,0 +1,17 @@
+.faq{
+  margin:auto;
+  max-width:1300px;
+}
+.support{
+  border:4px orange;
+}
+.part1{
+    color:red;
+}
+.part2{
+    color:grey;
+}
+.part3{
+  font-weight:1000;
+  margin-top:15px;
+}
