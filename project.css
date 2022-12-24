@@ -1197,6 +1197,7 @@ transition: .2s;
 		float: left;
 	  }
 	  .abcd > img{
+		  		  width:80%;
 		  margin:auto;
 		  text-align: center;
 		  margin-top:2%;
