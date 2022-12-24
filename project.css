@@ -1041,7 +1041,7 @@ transition: .2s;
 
 
 
-@media(max-width:330px){
+@media(max-width:900px){
 		
 
 .social a {
@@ -1205,6 +1205,61 @@ transition: .2s;
 		  margin-bottom:2%;
 		  -webkit-user-drag: none;
 	  }
+		/* 6. Блок - Команда */
+	
+	.content2{
+		margin: 5%;
+		float: left;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.content2 > h1{
+		display:flex;
+		justify-content: center;
+		text-align: center;
+		font-size:50px;
+		font-weight: bold;
+		color: black;
+	}
+	.comp-elem > img{
+		max-height:150px;
+	}
+	.compet{
+		display:flex;
+		flex-direction:column;
+		
+	}
+	.members{
+	
+	  display: flex;
+	flex-wrap:wrap;
+		justify-content:space-between;
+
+			}
+		  
+	.im123, .member{
+		max-width:100%;    
+		
+	}
+	.member > img{
+		margin-top:19px;
+		max-height:280px;
+	}
+.member{
+		max-width:280px;    
+		
+	}
+	.a{
+	  font-weight:1000;
+	font-size: x-large;
+		  margin-top:5px;
+	}
+	.c{
+	  font-size: x-small;
+		margin-top:7px;
+	}
+
 }
 
 	
