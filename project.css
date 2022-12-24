@@ -1102,9 +1102,10 @@ h5{
 }
 #send1 {
  border:2px inset #ff5722;
-	border-radius:44px; 
+	
+	border-radius:44px;
  background:#FF5722;	 
- width:250px;
+ width:80%;
  height:50px;
  margin-bottom:100px;
  color: #0051ff;
@@ -1167,7 +1168,42 @@ transition: .2s;
 .custom-checkbox:disabled+label::before {
   background-color: #e9ecef;
 }
-
+	.content1 {
+		display: flex;
+		flex-direction:column;
+		margin: auto;
+		background:white;
+	    box-shadow: 5px 10px 90px -15px;
+		width: 60%;
+		margin-left: 20%;
+		margin-right: 20%;
+		box-sizing: border-box;
+	  }
+	.content1 a{
+		text-align: center;
+		font-size:50px;
+		font-weight: bold;
+		color: black;
+	}
+	.abcd a{
+		margin-right:0%;
+		background: #fff;
+		color: #3498db;
+		font-size: 36px;
+		padding: 2%;
+		position: relative;
+		text-align: center;
+		font-size:small;
+		float: left;
+	  }
+	  .abcd > img{
+		  margin:auto;
+		  text-align: center;
+		  margin-top:2%;
+		  display:flex;
+		  margin-bottom:2%;
+		  -webkit-user-drag: none;
+	  }
 }
 
 	
