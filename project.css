@@ -1041,7 +1041,7 @@ transition: .2s;
 
 
 
-@media(max-width:325px){
+@media(max-width:330px){
 		
 
 .social a {
@@ -1078,6 +1078,7 @@ color:#999999;
 }
 .footer1{
  display:flex;
+	flex-direction:column;
 justify-content: space-around;
 }
 ins{
@@ -1093,7 +1094,7 @@ h5{
 .elem-form{
 	border:4px inset black;
  background:black;	 
- width:300px;
+ width:200px;
 	 color:white;
 }
 .ppp {
@@ -1103,7 +1104,7 @@ h5{
  border:2px inset #ff5722;
 	border-radius:44px; 
  background:#FF5722;	 
- width:500px;
+ width:250px;
  height:50px;
  margin-bottom:100px;
  color: #0051ff;
