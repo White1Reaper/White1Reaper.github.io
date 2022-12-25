@@ -49,7 +49,10 @@ var title = 'Hello World';
 var url = 'index14.html';
 history.pushState(state, title, url);
 	 
-} 
+}
+$( ".test" ).change(function() {
+  console.log( "Значение изменилось!" );
+});
    addEventListener("popstate", function () {
     $("#1, #2, #3, #check").change(function () {
         var nam = $("#1").val();
