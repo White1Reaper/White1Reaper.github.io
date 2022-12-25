@@ -1,10 +1,10 @@
 function openForm() {
-    history.pushState({page: 2}, "Form", "?form-is-open");
+    history.pushState({page: 2}, "Form", "?form");
     return false;
 }
 
 function openHome() {
-    history.replaceState({page: 1}, "Home", "");
+    history.replaceState({page: 1}, "Home", "?home");
     return false;
 }
 
@@ -13,7 +13,7 @@ $(document).ready(function () {
         openForm();
         event.preventDefault();
         $("#myOverlay").fadeIn(297, function () {
-        document.getElementById("myForm").style.display = "block";
+            $("#myForm").css("display", "block").animate({opacity: 1}, 0);
         });
         if (localStorage.getItem("name").length > 0) {
             document.querySelector("#name_polz").value =
