@@ -49,8 +49,8 @@ var title = 'Hello World';
 var url = 'index14.html';
 history.pushState(state, title, url);
 	 
-Email } 
-M   addEventListener("popstate", function () {
+} 
+   addEventListener("popstate", function () {
     $("#1, #2, #3, #check").change(function () {
         var nam = $("#1").val();
         var email = $("#2").val();
