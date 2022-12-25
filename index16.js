@@ -50,11 +50,11 @@ $(document).ready(function () {
                 message: localStorage.getItem("mes"),
                 name: localStorage.getItem("name")
             },
-            form: "iWIebCaiz"
+
         }).then(function () {
-            alert("Ваше сообщение отправлено");
+            alert("оправка успешно завершена!");
         }).catch(function () {
-            alert("Ошибка отправки, попробуйте снова");
+            alert("отправка провалена");
         });
         document.querySelector("#name_polz").value = "";
         document.querySelector("#email_polz").value = "";
@@ -65,9 +65,9 @@ $(document).ready(function () {
     });
 
     addEventListener("popstate", function () {
-        $("#myForm").animate({opacity: 0}, 198, function () {
+        $("#myForm").animate({opacity: 0}, 0, function () {
             $(this).css("display", "none");
-            $("#myOverlay").fadeOut(297);
+            $("#myOverlay").fadeOut(0);
             openHome();
         });
     }, false);
