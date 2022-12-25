@@ -26,6 +26,7 @@ $("#send1").click(function () {
 
 
 function openForm() {
+	    document.getElementById("myForm").style.display = "block";
 						      var inputName= document.getElementById("1");
  inputName.value=localStorage.getItem('Name');
       var inputEmail= document.getElementById("2");
@@ -33,7 +34,7 @@ function openForm() {
 			      var inputTextarea= document.getElementById("3");
  inputTextarea.value=localStorage.getItem('Message');
 
-    document.getElementById("myForm").style.display = "block";
+
 	  var state = { 'page_id': 2, 'user_id': 5 };
 var title = 'Hello World';
 var url = 'index14.html_form';
