@@ -1,76 +1,94 @@
+function openForm() {
+    history.pushState({page: 2}, "Form", "?form");
+    return false;
+}
 
-$("#send1").click(function () {
+function openHome() {
+    history.replaceState({page: 1}, "Home", "?home");
+    return false;
+}
 
+$(document).ready(function () {
+    $(".myButton").click(function (event) {
+        openForm();
+        event.preventDefault();
+        $("#myOverlay").fadeIn(297, function () {
+            $("#myForm").css("display", "block").animate({opacity: 1}, 198);
+        });
+        if (localStorage.getItem("name").length > 0) {
+            document.querySelector("#name_polz").value =
+            localStorage.getItem("name");
+        }
+        if (localStorage.getItem("email").length > 0) {
+            document.querySelector("#email_polz").value =
+            localStorage.getItem("email");
+        }
+        if (localStorage.getItem("mes").length > 0) {
+            document.querySelector("#mes").value =
+            localStorage.getItem("mes");
+        }
+        if (localStorage.getItem("check") === "true") {
+            document.querySelector("#check").checked = true;
+        }
+    });
+
+    $("#myOverlay, #close").click(function () {
+        $("#myForm").animate({opacity: 0}, 198, function () {
+            $(this).css("display", "none");
+            $("#myOverlay").fadeOut(297);
+            openHome();
+        });
+    });
+
+    $("#lete").click(function () {
         var slapform = new Slapform();
         $("#lete").prop("disabled", true);
         slapform.submit({
             data: {
                 checkbox: localStorage.getItem("check"),
-                email: localStorage.getItem("Email"),
-                message: localStorage.getItem("Message"),
-                name: localStorage.getItem("Name")
+                email: localStorage.getItem("email"),
+                message: localStorage.getItem("mes"),
+                name: localStorage.getItem("name")
             },
-            form: "vog0f58Vj"
+            form: "iWIebCaiz"
         }).then(function () {
-            alert("successful sending!");
+            alert("Ваше сообщение отправлено");
         }).catch(function () {
-            alert("sending failed");
+            alert("Ошибка отправки, попробуйте снова");
         });
-	        document.getElementById("1").value = "";
-        document.getElementById("2").value = "";
-        document.getElementById("3").value = "";
+        document.querySelector("#name_polz").value = "";
+        document.querySelector("#email_polz").value = "";
+        document.querySelector("#mes").value = "";
         document.querySelector("#check").checked = false;
         localStorage.clear();
         return false;
     });
 
+    addEventListener("popstate", function () {
+        $("#myForm").animate({opacity: 0}, 198, function () {
+            $(this).css("display", "none");
+            $("#myOverlay").fadeOut(297);
+            openHome();
+        });
+    }, false);
 
-function openForm() {
-	    document.getElementById("myForm").style.display = "block";
-						      var inputName= document.getElementById("1");
- inputName.value=localStorage.getItem('Name');
-      var inputEmail= document.getElementById("2");
- inputEmail.value=localStorage.getItem('Email');
-			      var inputTextarea= document.getElementById("3");
- inputTextarea.value=localStorage.getItem('Message');
-
-
-	  var state = { 'page_id': 2, 'user_id': 5 };
-var title = 'Hello World';
-var url = 'index14.html_form';
-history.pushState(state, title, url);
-	 
-
-}
- function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-	  var state = { 'page_id': 1, 'user_id': 5 };
-var title = 'Hello World';
-var url = 'index14.html';
-history.pushState(state, title, url);
-	 
-}
-$( ".test" ).on("change", function() {
-  alert( "Значение изменилось!" );
-});
-   addEventListener("popstate", function () {
-    $("#1, #2, #3, #check").change(function () {
-        var nam = $("#1").val();
-        var email = $("#2").val();
-        var mes = $("#3").val();
+    $("#name_polz, #email_polz, #mes, #check").change(function () {
+        var nam = $("#name_polz").val();
+        var email = $("#email_polz").val();
+        var mes = $("#mes").val();
         var check = $("#check").prop("checked");
-        localStorage.setItem("Name", nam);
-        localStorage.setItem("Email", email);
-        localStorage.setItem("Message", mes);
+        localStorage.setItem("name", nam);
+        localStorage.setItem("email", email);
+        localStorage.setItem("mes", mes);
         if (check) {
             localStorage.setItem("check", true);
         } else {
             localStorage.setItem("check", false);
         }
         if (nam.length > 0 && email.length > 0 && mes.length > 0 && check) {
-            $("#send1").prop("disabled", false);
+            $("#lete").prop("disabled", false);
         } else {
-            $("#send1").prop("disabled", true);
+            $("#lete").prop("disabled", true);
         }
         return false;
     });
