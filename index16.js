@@ -1,18 +1,14 @@
 
 $("#send1").click(function () {
-	        document.getElementById("1").value = "";
-        document.getElementById("2").value = "";
-        document.getElementById("3").value = "";
-        document.querySelector("#check").checked = false;
-        localStorage.clear();
+
         var slapform = new Slapform();
         $("#lete").prop("disabled", true);
         slapform.submit({
             data: {
                 checkbox: localStorage.getItem("check"),
-                email: localStorage.getItem("email"),
-                message: localStorage.getItem("mes"),
-                name: localStorage.getItem("nam")
+                email: localStorage.getItem("Email"),
+                message: localStorage.getItem("Message"),
+                name: localStorage.getItem("Name")
             },
             form: "vog0f58Vj"
         }).then(function () {
@@ -20,7 +16,11 @@ $("#send1").click(function () {
         }).catch(function () {
             alert("sending failed");
         });
-
+	        document.getElementById("1").value = "";
+        document.getElementById("2").value = "";
+        document.getElementById("3").value = "";
+        document.querySelector("#check").checked = false;
+        localStorage.clear();
         return false;
     });
 
@@ -65,9 +65,9 @@ history.pushState(state, title, url);
             localStorage.setItem("check", false);
         }
         if (nam.length > 0 && email.length > 0 && mes.length > 0 && check) {
-            $("#lete").prop("disabled", false);
+            $("#send1").prop("disabled", false);
         } else {
-            $("#lete").prop("disabled", true);
+            $("#send1").prop("disabled", true);
         }
         return false;
     });
