@@ -1095,17 +1095,25 @@ body{
 	width: 150px;
 	height: 50px;
 	vertical-align: middle;
+	display:flex;
 }
 
 .menu {
-	display: inline-block;
-	margin: 0;
+	display: flex;
+	flex-direction: column;
 	vertical-align: middle;
-	padding: 0;
-	width: auto;
+	justify-content:space-around;
 	
 }
-
+	.menu > li{
+	display:flex;
+width:100%;
+	}
+	
+.menu {
+		width:100px;
+	margin-top:5%;
+}
 /* Ð’Ñ‹Ð¿Ð°Ð´Ð°ÑŽÑ‰ÐµÐµ Ð¼ÐµÐ½ÑŽ */
 .second{
 	display: none;
@@ -1116,6 +1124,7 @@ body{
 	position: static;
 	display: block;	
 }
+	
 #nav:hover .second {
 	display: block;
 }
@@ -1124,6 +1133,7 @@ body{
 	background-color: orangered;
 	padding-top: 1%;
 }
+	
 .menu li a:hover{
 	background: #FF4500;
 }
@@ -1615,5 +1625,46 @@ ul.menu li {
 	.blok_tarif_pad_body a{
 		color: #000;
 		font-weight: 800;
+	}
+	    .faq1{
+	  margin:auto;
+	  float: left;
+	  margin-left: 3%;
+	  margin-right: 10%;
+	  width: 90%;
+	  margin-bottom: 5%;
+    }
+	.hhh{
+	 display:flex;
+	 justify-content:center;
+	 margin-top: 10%;
+	 margin-bottom: 5%;
+	 font-size:50px;
+	 font-weight: bold;
+	 color: black;
+	}
+	.support{
+	  border:4px solid orange;
+	}
+	.faq1 li{
+		margin-left: 14%;
+		
+		margin-right: 10%;
+	}
+	.part1{
+		color:red;
+	font-size:20px;
+		font-weight:1000;
+	}
+	.part2{
+		margin-left:5%;
+		color:grey;
+	}
+	
+	.part3{
+	 color:black;
+	  font-weight:1000;
+	  margin-top:15px;
+	 font-size:18px;
 	}
 }
