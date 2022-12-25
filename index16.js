@@ -27,11 +27,11 @@ $("#send1").click(function () {
 
 function openForm() {
 						      var inputName= document.getElementById("1");
- inputName.value=localStorage.getItem('nam');
+ inputName.value=localStorage.getItem('Name');
       var inputEmail= document.getElementById("2");
- inputEmail.value=localStorage.getItem('email');
+ inputEmail.value=localStorage.getItem('Email');
 			      var inputTextarea= document.getElementById("3");
- inputTextarea.value=localStorage.getItem('mes');
+ inputTextarea.value=localStorage.getItem('Message');
 
     document.getElementById("myForm").style.display = "block";
 	  var state = { 'page_id': 2, 'user_id': 5 };
@@ -48,17 +48,16 @@ var title = 'Hello World';
 var url = 'index14.html';
 history.pushState(state, title, url);
 	 
-
- } 
-    addEventListener("popstate", function () {
+Email } 
+M   addEventListener("popstate", function () {
     $("#1, #2, #3, #check").change(function () {
         var nam = $("#1").val();
         var email = $("#2").val();
-        var mes = $("3").val();
+        var mes = $("#3").val();
         var check = $("#check").prop("checked");
-        localStorage.setItem("1", nam);
-        localStorage.setItem("2", email);
-        localStorage.setItem("3", mes);
+        localStorage.setItem("Name", nam);
+        localStorage.setItem("Email", email);
+        localStorage.setItem("Message", mes);
         if (check) {
             localStorage.setItem("check", true);
         } else {
