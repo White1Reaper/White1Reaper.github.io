@@ -52,7 +52,7 @@ $(document).ready(function () {
             },
         form: "iWIebCaiz"
         }).then(function () {
-            alert("оправка успешно завершена!");
+            alert("отправка успешно завершена!");
         }).catch(function () {
             alert("отправка провалена");
         });
