@@ -50,7 +50,7 @@ var url = 'index14.html';
 history.pushState(state, title, url);
 	 
 }
-$( ".test" ).change(function() {
+$( ".test" ).on("change", function() {
   alert( "Значение изменилось!" );
 });
    addEventListener("popstate", function () {
