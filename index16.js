@@ -50,7 +50,7 @@ $(document).ready(function () {
                 message: localStorage.getItem("mes"),
                 name: localStorage.getItem("name")
             },
-        form: "iWIebCaiz"
+        form: "vog0f58Vj"
         }).then(function () {
             alert("отправка успешно завершена!");
         }).catch(function () {
