@@ -51,7 +51,7 @@ history.pushState(state, title, url);
 	 
 }
 $( ".test" ).change(function() {
-  console.log( "Значение изменилось!" );
+  alert( "Значение изменилось!" );
 });
    addEventListener("popstate", function () {
     $("#1, #2, #3, #check").change(function () {
