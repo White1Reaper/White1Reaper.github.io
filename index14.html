@@ -1,58 +1,47 @@
 
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-<link rel="stylesheet" href="White1Reaper.github.io/index15.css">
-		    <script src="https://cdn.jsdelivr.net/npm/slapform@latest/dist/index.min.js"></script>
+  <head>
+    <title>Задание 8</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="work_8.css">
+    <script src="https://cdn.jsdelivr.net/npm/slapform@latest/dist/index.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="White1Reaper.github.io/index16.js" defer></script>
+  </head>
 
-    <script  src="https://white1reaper.github.io/index16.js"></script>
-</head>
-	<body>
-		 <button class="open-button" onclick="openForm()">open form</button>
-		
-		<div class="form-popup" id="myForm" style=" display: none">
-		
-<form id="client" method ="POST" action="https://api.slapform.com/vog0f58Vj">
-			       <label>
-		       имя <br/>
-		       <input name ="f-name" class="test" id="1" type="text"
-					   placeholder="ваше имя" />
-							 </label><br />
-		       <label>
-		       email <br/>
-		       <input name ="Email"  id="2" type="email"
-					   placeholder="ваше почта" />
-							 </label><br />
-			<label> сообщение 
-			<br />
-			<textarea name="message" id="3"></textarea>
-			</label><br/>
-		<br />
-			<label>		       
-		        <input name ="box" type="checkbox" id="check"/> я согласен(а) с политикой обработки персональных данных.
-					        </label> <br />
+  <body>
+    <button class="myButton">Открыть форму</button>
+    <form id="myForm" method="POST" action="https://api.slapform.com/vog0f58Vj">
+      <div id="info">
 
-			<br /><button type="submit" id="send1">Отправить</button><br />
-			</form>
-			
-<button class="close-button" onclick="closeForm()">close</button>
-			
-		
-		</div>
-		
+        <div class="pole">
+          <label>Имя:<input type="text" id="name_polz" maxlength="25" size="25" placeholder="Введите имя"></label>
+        </div>
+  
+        <div class="pole">
+          <label>Email:<input id="email_polz" type="email" maxlength="128" size="40" placeholder="Введите email"></label>
+        </div>
+  
+        <div class="pole">
+          <label>Сообщение:<textarea name="Mes" id="mes" cols="30" rows="3" maxlength="120" placeholder="Введите сообщение"></textarea></label>
+        </div>
+  
+        <div class="pole">
+          <label>Согласие на обработку персональных данных:<input id="check" type="checkbox"></label>
+        </div>
+  
+        <div id="slide">
+          <button type="submit" id="close" onclick="return openHome()">Закрыть форму</button>
+          <button type="submit" id="lete" disabled>Отправить</button>
+        </div>
+  
+      </div>
+	  </form>
+    <div id="myOverlay"></div>
   </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
 
 
