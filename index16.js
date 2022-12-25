@@ -50,7 +50,7 @@ $(document).ready(function () {
                 message: localStorage.getItem("mes"),
                 name: localStorage.getItem("name")
             },
-
+        form: "iWIebCaiz"
         }).then(function () {
             alert("оправка успешно завершена!");
         }).catch(function () {
