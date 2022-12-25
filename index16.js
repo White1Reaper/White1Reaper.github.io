@@ -1,10 +1,10 @@
 function openForm() {
-    history.pushState({page: 2}, "Form", "?form");
+    history.pushState({page: 2}, "Form", "?form-is-open");
     return false;
 }
 
 function openHome() {
-    history.replaceState({page: 1}, "Home", "?home");
+    history.replaceState({page: 1}, "Home", "");
     return false;
 }
 
@@ -13,7 +13,7 @@ $(document).ready(function () {
         openForm();
         event.preventDefault();
         $("#myOverlay").fadeIn(297, function () {
-            $("#myForm").css("display", "block").animate({opacity: 1}, 198);
+        document.getElementById("myForm").style.display = "block";
         });
         if (localStorage.getItem("name").length > 0) {
             document.querySelector("#name_polz").value =
@@ -33,7 +33,7 @@ $(document).ready(function () {
     });
 
     $("#myOverlay, #close").click(function () {
-        $("#myForm").animate({opacity: 0}, 198, function () {
+        $("#myForm").animate({opacity: 0}, 0, function () {
             $(this).css("display", "none");
             $("#myOverlay").fadeOut(297);
             openHome();
