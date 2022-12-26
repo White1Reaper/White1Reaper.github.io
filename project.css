@@ -1181,9 +1181,7 @@ body{
 	position: static;
 	display: block;	
 }
-#nav:hover .second {
-	display: block;
-}
+
 #nav:hover .second > li {
 	display: block;
 	background-color: orangered;
