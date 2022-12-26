@@ -52,8 +52,8 @@ $("#send1").click(function () {
     return false;
 });
 $("#nav").on("click", function() {
-	var wWidth  = $window.width();
-	if(wWidth>=960){
+var clientWidth = document.getElementById('myb1ody').clientWidth;
+	if(clientWidth>=960){
   $(".second").toggle();
 	}
 });
