@@ -1,3 +1,4 @@
+/*global $, Slapform */
 // Авто-прокрутка слайдера 1
 
 $(function(){
@@ -33,10 +34,9 @@ $(".multiple-items").slick({
 
 // Блок - подвал
 $("#send1").click(function () {
-	
     document.querySelector("#happy").checked = false;
 
-    var slapform = new Slapform();
+    let slapform = new Slapform();
     $("#send1").prop("disabled", true);
     slapform.submit({
         form: "vog0f58Vj"
