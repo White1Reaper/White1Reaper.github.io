@@ -52,7 +52,5 @@ $("#send1").click(function () {
     return false;
 });
 $("#nav").on("click", function() {
-
-  $(".second").toggle();
-	
+    $(".second").toggle();
 });
