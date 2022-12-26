@@ -1173,6 +1173,8 @@ body{
 
 /* Выпадающее меню */
 .second{
+	
+		background: #FF4500;
 	display: none;
 	position: absolute;
 	margin-left: 12.75%;
