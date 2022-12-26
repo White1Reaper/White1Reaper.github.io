@@ -1184,7 +1184,7 @@ body{
 	display: block;	
 }
 
-#nav:hover .second > li {
+#nav .second > li {
 	display: block;
 	background-color: orangered;
 	padding-top: 1%;
