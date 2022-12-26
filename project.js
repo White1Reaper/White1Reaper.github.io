@@ -53,4 +53,6 @@ $("#send1").click(function () {
 });
 $("#nav").on("click", function() {
   $(".second").toggle();
+	   let headingElement = document.querySelector('.second');
+	  headingElement.style.display = 'block';
 });
