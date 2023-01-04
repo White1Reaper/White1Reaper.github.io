@@ -7,6 +7,20 @@
 		right:10px;
 	top:30px;
 	}
+	#open-butt > button{
+		background: cyan;
+	width:100px;
+		height:100px;
+		border-radius:51px;
+		border:2px solid blue;
+		font-weight:1000;
+		color:blue;
+		opacity:0.3;
+	}
+		#open-butt > button:hover{
+			opacity:1;
+			transition:0.2s;
+		}
 	body{
 		font-family: 'Montserrat';
 		font-style: normal;
