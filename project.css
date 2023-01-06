@@ -14,7 +14,7 @@
         border-radius:18px;
 		border: 3px outset lime;
 	}
-	#open-butt > button{
+	#open-form{
 		background: cyan;
 	width:100px;
 		height:100px;
@@ -24,7 +24,7 @@
 		color:blue;
 		opacity:0.3;
 	}
-		#open-butt > button:hover{
+		#open-form:hover{
 			opacity:1;
 			transition:0.2s;
 		}
