@@ -3,9 +3,16 @@
 /* 1. Шапка сайта + навигационное меню */
 @media(min-width:960px){
 	#open-butt{
+		display:flex;
 		position:fixed;
 		right:10px;
 	top:30px;
+	}
+	.form11{
+		max-width:250px;
+		background:white;
+        border-radius:18px;
+		border: 3px outset lime;
 	}
 	#open-butt > button{
 		background: cyan;
