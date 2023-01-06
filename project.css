@@ -2,7 +2,7 @@
 
 /* 1. Шапка сайта + навигационное меню */
 @media(min-width:960px){
-	#open-butt{
+	#fff{
 		display:flex;
 		position:fixed;
 		right:10px;
