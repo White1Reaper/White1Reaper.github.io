@@ -68,6 +68,12 @@ function openHome() {
 }
 
 $("#open-form").on("click", function() {
+		if (document.querySelector(".form11").style.display == "none")
+		openForm();
+	else
+		openHome();
+	
+    $(".form11").toggle(400);
 	        if (localStorage.getItem("name").length > 0) {
             document.querySelector("#11").value =
             localStorage.getItem("name");
@@ -88,12 +94,7 @@ $("#open-form").on("click", function() {
         if (localStorage.getItem("check") === "true") {
             document.querySelector("#check").checked = true;
         }
-	if (document.querySelector(".form11").style.display == "none")
-		openForm();
-	else
-		openHome();
-	
-    $(".form11").toggle(400);
+
 });
 
     addEventListener("popstate", function () {      
