@@ -68,6 +68,26 @@ function openHome() {
 }
 
 $("#open-form").on("click", function() {
+	        if (localStorage.getItem("name").length > 0) {
+            document.querySelector("#11").value =
+            localStorage.getItem("name");
+        }
+        if (localStorage.getItem("email").length > 0) {
+            document.querySelector("#22").value =
+            localStorage.getItem("email");
+        }
+        if (localStorage.getItem("mes").length > 0) {
+            document.querySelector("#33").value =
+            localStorage.getItem("mes");
+        }
+	
+        if (localStorage.getItem("tel").length > 0) {
+            document.querySelector("#44").value =
+            localStorage.getItem("tel");
+        }
+        if (localStorage.getItem("check") === "true") {
+            document.querySelector("#check").checked = true;
+        }
 	if (document.querySelector(".form11").style.display == "none")
 		openForm();
 	else
@@ -75,3 +95,26 @@ $("#open-form").on("click", function() {
 	
     $(".form11").toggle(400);
 });
+
+    addEventListener("popstate", function () {      
+    $("#11, #22, #33, #44, #55").change(function () {
+        var nam = $("#11").val();
+        var email = $("#22").val();
+        var mes = $("#33").val();
+	    var tel = $("#44").val();
+        var check = $("#55").prop("checked");
+        localStorage.setItem("name", nam);
+        localStorage.setItem("email", email);
+        localStorage.setItem("mes", mes);
+	    localStorage.setItem("tel", tel);
+        if (check) {
+            localStorage.setItem("check", true);
+        } else {
+            localStorage.setItem("check", false);
+        }
+        
+        return false;
+    });
+});
+
+
