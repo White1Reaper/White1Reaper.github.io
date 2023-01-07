@@ -82,7 +82,7 @@ $("#open-form").on("click", function() {
 });
 
     addEventListener("popstate", function () {      
-    $("#na, #em, #me, #ph, #check").change(function (event) {
+    $("#na, #em, #me, #ph, #check").change(function () {
 	    
         var nam = $("#na").val();
         var email = $("#em").val();
