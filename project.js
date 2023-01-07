@@ -55,6 +55,23 @@ $("#nav").on("click", function() {
     $(".second").toggle();
 });
 
+// Блок - фиксированная форма
+
+function openForm() {
+    history.pushState({page: 2}, "Form", "?form");
+    return false;
+}
+
+function openHome() {
+    history.replaceState({page: 1}, "Home", "?home");
+    return false;
+}
+
 $("#open-form").on("click", function() {
+	if (document.querySelector(".form11").style.display == "none")
+		openForm();
+	else
+		openHome();
+	
     $(".form11").toggle(400);
 });
