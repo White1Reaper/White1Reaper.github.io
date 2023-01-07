@@ -55,9 +55,6 @@ $("#nav").on("click", function() {
     $(".second").toggle();
 });
 
-function ChangeColor() {
-	var Element=documsent.querySelector(".form11");
-	if (Element.style.display == 'block') Element.style.display = 'none';
-	else Element.style.display = 'block';
-	return false;
-}
+$("#open-form").on("click", function() {
+    $(".form11").toggle();
+});
