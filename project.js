@@ -56,5 +56,5 @@ $("#nav").on("click", function() {
 });
 
 $("#open-form").on("click", function() {
-    $(".form11").toggle(400,swing,complete);
+    $(".form11").toggle(400);
 });
