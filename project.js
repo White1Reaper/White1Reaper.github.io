@@ -98,12 +98,12 @@ $("#open-form").on("click", function() {
 });
 
     addEventListener("popstate", function () {      
-    $("#11, #22, #33, #44, #55").change(function () {
+    $("#11, #22, #33, #44, #check").change(function () {
         var nam = $("#11").val();
         var email = $("#22").val();
         var mes = $("#33").val();
 	    var tel = $("#44").val();
-        var check = $("#55").prop("checked");
+        var check = $("#check").prop("checked");
         localStorage.setItem("name", nam);
         localStorage.setItem("email", email);
         localStorage.setItem("mes", mes);
