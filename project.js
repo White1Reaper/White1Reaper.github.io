@@ -81,7 +81,6 @@ $("#open-form").on("click", function() {
 	    document.querySelector("#ph").value = localStorage.getItem("tel");
 });
 
-    addEventListener("popstate", function () {      
     $("#na, #em, #me, #ph, #check").change(function () {
 	    
         var nam = $("#na").val();
@@ -101,6 +100,6 @@ $("#open-form").on("click", function() {
         
         return false;
     });
-});
+
 
 
