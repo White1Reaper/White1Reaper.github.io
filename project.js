@@ -74,27 +74,11 @@ $("#open-form").on("click", function() {
 		openHome();
 	
     $(".form11").toggle(400);
-	        if (localStorage.getItem("name").length > 0) {
-            document.querySelector("#11").value =
-            localStorage.getItem("name");
-        }
-        if (localStorage.getItem("email").length > 0) {
-            document.querySelector("#22").value =
-            localStorage.getItem("email");
-        }
-        if (localStorage.getItem("mes").length > 0) {
-            document.querySelector("#33").value =
-            localStorage.getItem("mes");
-        }
-	
-        if (localStorage.getItem("tel").length > 0) {
-            document.querySelector("#44").value =
-            localStorage.getItem("tel");
-        }
-        if (localStorage.getItem("check") === "true") {
-            document.querySelector("#check").checked = true;
-        }
-
+	   document.querySelector("#11").value = localStorage.getItem("name");
+        
+            document.querySelector("#22").value = localStorage.getItem("email");
+            document.querySelector("#33").value = localStorage.getItem("mes");        
+	    document.querySelector("#44").value = localStorage.getItem("tel");
 });
 
     addEventListener("popstate", function () {      
