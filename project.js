@@ -76,7 +76,7 @@ $("#open-form").on("click", function() {
     $(".form11").toggle(400);
 	   document.querySelector("#na").value = localStorage.getItem("name");
         
-            document.querySelector("em").value = localStorage.getItem("emai");
+            document.querySelector("#em").value = localStorage.getItem("emai");
             document.querySelector("#me").value = localStorage.getItem("mess");        
 	    document.querySelector("#ph").value = localStorage.getItem("tele");
 });
