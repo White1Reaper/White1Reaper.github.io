@@ -76,9 +76,9 @@ $("#open-form").on("click", function() {
     $(".form11").toggle(400);
 	   document.querySelector("#na").value = localStorage.getItem("name");
         
-            document.querySelector("em").value = localStorage.getItem("email");
-            document.querySelector("#me").value = localStorage.getItem("mes");        
-	    document.querySelector("#ph").value = localStorage.getItem("tel");
+            document.querySelector("em").value = localStorage.getItem("emai");
+            document.querySelector("#me").value = localStorage.getItem("mess");        
+	    document.querySelector("#ph").value = localStorage.getItem("tele");
 });
 
     $("#na, #em, #me, #ph, #check").change(function () {
@@ -89,9 +89,9 @@ $("#open-form").on("click", function() {
 	    var tel = $("#ph").val();
         var check = $("#check").prop("checked");
         localStorage.setItem("name", nam);
-        localStorage.setItem("email", email);
-        localStorage.setItem("mes", mes);
-	    localStorage.setItem("tel", tel);
+        localStorage.setItem("emai", email);
+        localStorage.setItem("mess", mes);
+	    localStorage.setItem("tele", tel);
         if (check) {
             localStorage.setItem("check", true);
         } else {
