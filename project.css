@@ -2290,4 +2290,31 @@ ul.menu li {
 		margin-bottom:2%;
 		-webkit-user-drag: none;
 		}
+		#fff{
+		display:flex;
+		position:fixed;
+		right:10px;
+	top:30px;
+	}
+	.form11{
+		display: none;
+		max-width:250px;
+		background:white;
+        border-radius:18px;
+		border: 3px outset lime;
+	}
+	#open-form{
+		background: cyan;
+	width:100px;
+		height:100px;
+		border-radius:51px;
+		border:2px solid blue;
+		font-weight:1000;
+		color:blue;
+		opacity:0.3;
+	}
+		#open-form:hover{
+			opacity:1;
+			transition:0.2s;
+		}
 }
