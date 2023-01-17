@@ -210,7 +210,7 @@ $("#send11").click(function (e) {
     checkbox: localStorage.getItem("check")
 }
     // if(num_err == 0){
-    //     return fetch('https://formcarry.com/s/E0yn0irn5E/', {
+    //     return fetch('https://api.slapform.com/vog0f58Vj', {
     //         method: 'POST',
     //         headers: {'Content-Type': 'application/json', 'Accept': 'application/json;charset=utf-8'},
     //         body: JSON.stringify(newForm),
