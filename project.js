@@ -53,7 +53,7 @@ $("#send1").click(function () {
 });
 
 $("#nav").on("click", function() {
-    $(".second").toggle(400);
+    $(".second").slideToggle(400);
 });
 
 
