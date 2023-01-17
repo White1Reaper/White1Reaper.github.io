@@ -227,6 +227,8 @@ $("#send11").click(function (e) {
          .catch(function (Error) { // This function runs only on error
              alert('Ошибка отправки!', Error);
          })
+	     		        $('#send11').attr('disabled', false);
+    $('#send11').text('Отправить')
      }
     
     alert(JSON.stringify(newForm));
