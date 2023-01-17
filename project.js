@@ -82,7 +82,7 @@ $("#open-form").on("click", function() {
 	    document.querySelector("#ph").value = localStorage.getItem("tele");
 });
 
-$("#na, #em, #me, #ph, #check").change(function () {
+$("#na").change(function () {
 	    
     var nam = $("#na").val();
     var email = $("#em").val();
@@ -100,7 +100,78 @@ $("#na, #em, #me, #ph, #check").change(function () {
     } 
     return false;
 });
-
+$("#em").change(function () {
+	    
+    var nam = $("#na").val();
+    var email = $("#em").val();
+    var mes = $("#me").val();
+    var tel = $("#ph").val();
+    var check = $("#check").prop("checked");
+    localStorage.setItem("name", nam);
+    localStorage.setItem("emai", email);
+    localStorage.setItem("mess", mes);
+	localStorage.setItem("tele", tel);
+    if (check) {
+        localStorage.setItem("check", true);
+    } else {
+        localStorage.setItem("check", false);
+    } 
+    return false;
+});
+$("#me").change(function () {
+	    
+    var nam = $("#na").val();
+    var email = $("#em").val();
+    var mes = $("#me").val();
+    var tel = $("#ph").val();
+    var check = $("#check").prop("checked");
+    localStorage.setItem("name", nam);
+    localStorage.setItem("emai", email);
+    localStorage.setItem("mess", mes);
+	localStorage.setItem("tele", tel);
+    if (check) {
+        localStorage.setItem("check", true);
+    } else {
+        localStorage.setItem("check", false);
+    } 
+    return false;
+});
+$("#ph").change(function () {
+	    
+    var nam = $("#na").val();
+    var email = $("#em").val();
+    var mes = $("#me").val();
+    var tel = $("#ph").val();
+    var check = $("#check").prop("checked");
+    localStorage.setItem("name", nam);
+    localStorage.setItem("emai", email);
+    localStorage.setItem("mess", mes);
+	localStorage.setItem("tele", tel);
+    if (check) {
+        localStorage.setItem("check", true);
+    } else {
+        localStorage.setItem("check", false);
+    } 
+    return false;
+});
+$("#check").change(function () {
+	    
+    var nam = $("#na").val();
+    var email = $("#em").val();
+    var mes = $("#me").val();
+    var tel = $("#ph").val();
+    var check = $("#check").prop("checked");
+    localStorage.setItem("name", nam);
+    localStorage.setItem("emai", email);
+    localStorage.setItem("mess", mes);
+	localStorage.setItem("tele", tel);
+    if (check) {
+        localStorage.setItem("check", true);
+    } else {
+        localStorage.setItem("check", false);
+    } 
+    return false;
+});
 // Работа с выпадающей формой с помощью fetch
 
 // Отработка ошибок
