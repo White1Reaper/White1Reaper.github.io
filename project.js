@@ -51,7 +51,7 @@ $("#send1").click(function () {
 });
 
 $("#nav").on("click", function() {
-    $(".second").toggle();
+    $(".second").slideToggle(400);
 });
 
 // Блок - фиксированная форма
