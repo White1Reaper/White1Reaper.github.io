@@ -128,6 +128,7 @@
 	}
 	#nav:hover .second {
 		display: block;
+		transition: .2s;
 	}
 	#nav:hover .second > li {
 		display: block;
