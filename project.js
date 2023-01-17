@@ -21,8 +21,6 @@ $(function(){
 });
 
 
-
-
 /* 8. Блок - Отзывы */
 $(".multiple-items").slick({
     dots: true,
@@ -53,9 +51,8 @@ $("#send1").click(function () {
 });
 
 $("#nav").on("click", function() {
-    $(".second").slideToggle(400);
+    $(".second").toggle();
 });
-
 
 // Блок - фиксированная форма
 
@@ -180,6 +177,7 @@ var click_form = document.getElementById('send11');
 var num_err = 0;
 click_form.onclick = function() {
     $('#send11').attr('disabled', true);
+    $('#send11').text('Идет отправка формы...')
     num_err = 0;
     let str_err='';
     var nam = document.getElementById('na');
@@ -222,7 +220,10 @@ $("#send11").click(function (e) {
     //         alert('Ошибка отправки!', Error);
     //     })
     // }
+    
     alert(JSON.stringify(newForm));
+    $('#send11').text('Отправить')
     $('#send11').attr('disabled', false);
     document.querySelector("#check").checked = false;
 });
+
