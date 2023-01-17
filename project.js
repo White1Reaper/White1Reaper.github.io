@@ -206,6 +206,13 @@ $("#send11").click(function (e) {
     message: localStorage.getItem("mess"),
     checkbox: localStorage.getItem("check")
 }
+	        var nam = $("#na").val();
+        var em = $("#em").val();
+        var mes = $("#me").val();
+	
+        var tel = $("#ph").val();
+        var check = $("#check").prop("checked");
+	    if (nam.length > 0 && em.length > 0  && tel.length > 0 && mes.length > 0 && check) {
     // if(num_err == 0){
     //     return fetch('https://formcarry.com/s/E0yn0irn5E/', {
     //         method: 'POST',
@@ -225,5 +232,6 @@ $("#send11").click(function (e) {
     $('#send11').text('Отправить')
     $('#send11').attr('disabled', false);
     document.querySelector("#check").checked = false;
+	    }
 });
 
