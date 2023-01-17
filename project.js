@@ -176,8 +176,7 @@ $("#check").change(function () {
 var click_form = document.getElementById('send11');
 var num_err = 0;
 click_form.onclick = function() {
-    $('#send11').attr('disabled', true);
-    $('#send11').text('Идет отправка формы...')
+
     num_err = 0;
     let str_err='';
     var nam = document.getElementById('na');
@@ -213,6 +212,8 @@ $("#send11").click(function (e) {
         var tel = $("#ph").val();
         var check = $("#check").prop("checked");
 	    if (nam.length > 0 && em.length > 0  && tel.length > 0 && mes.length > 0 && check) {
+		        $('#send11').attr('disabled', true);
+    $('#send11').text('Идет отправка формы...')
     // if(num_err == 0){
     //     return fetch('https://formcarry.com/s/E0yn0irn5E/', {
     //         method: 'POST',
