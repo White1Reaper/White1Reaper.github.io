@@ -72,7 +72,67 @@ $(document).ready(function () {
         });
     }, false);
 
-    $("#name_polz, #email_polz, #mes, #check").change(function () {
+    $("#name_polz").change(function () {
+        var nam = $("#name_polz").val();
+        var email = $("#email_polz").val();
+        var mes = $("#mes").val();
+        var check = $("#check").prop("checked");
+        localStorage.setItem("name", nam);
+        localStorage.setItem("email", email);
+        localStorage.setItem("mes", mes);
+        if (check) {
+            localStorage.setItem("check", true);
+        } else {
+            localStorage.setItem("check", false);
+        }
+        if (nam.length > 0 && email.length > 0 && mes.length > 0 && check) {
+            $("#lete").prop("disabled", false);
+        } else {
+            $("#lete").prop("disabled", true);
+        }
+        return false;
+    });
+        $("#email_polz").change(function () {
+        var nam = $("#name_polz").val();
+        var email = $("#email_polz").val();
+        var mes = $("#mes").val();
+        var check = $("#check").prop("checked");
+        localStorage.setItem("name", nam);
+        localStorage.setItem("email", email);
+        localStorage.setItem("mes", mes);
+        if (check) {
+            localStorage.setItem("check", true);
+        } else {
+            localStorage.setItem("check", false);
+        }
+        if (nam.length > 0 && email.length > 0 && mes.length > 0 && check) {
+            $("#lete").prop("disabled", false);
+        } else {
+            $("#lete").prop("disabled", true);
+        }
+        return false;
+    });
+        $("#mes").change(function () {
+        var nam = $("#name_polz").val();
+        var email = $("#email_polz").val();
+        var mes = $("#mes").val();
+        var check = $("#check").prop("checked");
+        localStorage.setItem("name", nam);
+        localStorage.setItem("email", email);
+        localStorage.setItem("mes", mes);
+        if (check) {
+            localStorage.setItem("check", true);
+        } else {
+            localStorage.setItem("check", false);
+        }
+        if (nam.length > 0 && email.length > 0 && mes.length > 0 && check) {
+            $("#lete").prop("disabled", false);
+        } else {
+            $("#lete").prop("disabled", true);
+        }
+        return false;
+    });
+        $("#check").change(function () {
         var nam = $("#name_polz").val();
         var email = $("#email_polz").val();
         var mes = $("#mes").val();
