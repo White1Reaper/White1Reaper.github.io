@@ -197,16 +197,17 @@ click_form.onclick = function() {
 
 //
 
-let newForm = {
+
+
+$("#send11").click(function (e) {
+    e.preventDefault();
+	let newForm = {
     name: localStorage.getItem("name"),
     phone: localStorage.getItem("tele"),
     email: localStorage.getItem("emai"),
     message: localStorage.getItem("mess"),
     checkbox: localStorage.getItem("check")
 }
-
-$("#send11").click(function (e) {
-    e.preventDefault();
     // if(num_err == 0){
     //     return fetch('https://formcarry.com/s/E0yn0irn5E/', {
     //         method: 'POST',
