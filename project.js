@@ -209,20 +209,20 @@ $("#send11").click(function (e) {
     message: localStorage.getItem("mess"),
     checkbox: localStorage.getItem("check")
 }
-    // if(num_err == 0){
-    //     return fetch('https://api.slapform.com/vog0f58Vj', {
-    //         method: 'POST',
-    //         headers: {'Content-Type': 'application/json', 'Accept': 'application/json;charset=utf-8'},
-    //         body: JSON.stringify(newForm),
-    //     })
-    //     .then(function (response) { // This function runs only on success
-    //         alert('Форма отправлена', response);
-    //         alert(JSON.stringify(newForm));
-    //     })
-    //     .catch(function (Error) { // This function runs only on error
-    //         alert('Ошибка отправки!', Error);
-    //     })
-    // }
+     if(num_err == 0){
+         return fetch('https://api.slapform.com/vog0f58Vj', {
+             method: 'POST',
+             headers: {'Content-Type': 'application/json', 'Accept': 'application/json;charset=utf-8'},
+             body: JSON.stringify(newForm),
+         })
+         .then(function (response) { 
+             alert('Форма отправлена', response);
+             alert(JSON.stringify(newForm));
+         })
+         .catch(function (Error) { 
+             alert('Ошибка отправки!', Error);
+         })
+     }
     
     alert(JSON.stringify(newForm));
     $('#send11').text('Отправить')
