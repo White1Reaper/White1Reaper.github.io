@@ -1,12 +1,20 @@
-<form action="" method="POST">
-  <input name="fio" />
-  <select name="year">
-    <?php 
-    for ($i = 1922; $i <= 2022; $i++) {
-      printf('<option value="%d">%d год</option>', $i, $i);
-    }
-    ?>
-  </select>
-  
-  <input type="submit" value="ok" />
-</form>
+<html lung="ru">
+<body>
+<form action="index.php"
+	      method ="POST">
+		       <label>
+		       имя <br/>
+		       <input name ="fio"
+					   placeholder="ваше имя" />
+							 </label><br />
+		       <label>
+			   <label>
+		       имя <br/>
+		       <input name ="email"
+					   placeholder="ваша почта" />
+							 </label><br />
+		       <label>
+             		<button type="submit">Отправить</button>
+             </form>
+ </body>
+</html>
