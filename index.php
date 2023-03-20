@@ -24,12 +24,12 @@ if (empty($_POST['fio'])) {
   print('Заполните имя.<br/>');
   $errors = TRUE;
 }
-
+/*
 if (empty($_POST['year']) || !is_numeric($_POST['year']) || !preg_match('/^\d+$/', $_POST['year'])) {
   print('Заполните год.<br/>');
   $errors = TRUE;
 }
-
+*/
 
 // *************
 // Тут необходимо проверить правильность заполнения всех остальных полей.
@@ -44,12 +44,20 @@ if ($errors) {
 
 $user = 'u53851';
 $pass = '6440273';
-$db = new PDO('mysql:host="kub-dev.ru";dbname=u53851', $user, $pass, [PDO::ATTR_PERSISTENT => true]);
+$db = new PDO('mysql:host=localhost;dbname=u53851', $user, $pass, [PDO::ATTR_PERSISTENT => true]);
 
 // Подготовленный запрос. Не именованные метки.
 try {
-  $stmt = $db->prepare("INSERT INTO application SET name = ?");
-  $stmt -> execute($_POST['fio']);
+  $stmt = $db->prepare("INSERT INTO form(fio, email) VALUES (:fio,:email)");
+  $name = $_POST["fio"];
+  //$stmt = $db->prepare("INSERT INTO form(email) VALUES (:email)");
+  $em = $_POST["email"];
+  $stmt -> execute(['fio'=>"$name", 'email'=>"$em"]);
+  //$stmt = $db->prepare("INSERT INTO form(email) VALUES (:email)");
+  //$em = $_POST["email"];
+  //$stmt -> execute(['email'=>"$em"]);
+ //$stmt = $db->prepare("INSERT INTO application SET name = ?");
+ //$stmt -> execute($_POST['fio']);
 }
 catch(PDOException $e){
   print('Error : ' . $e->getMessage());
