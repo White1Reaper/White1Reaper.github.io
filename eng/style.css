@@ -1,0 +1,147 @@
+/* Стили для шапки */
+header {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav li {
+	margin: 0 10px;
+	font-size: 18px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 48px;
+}
+
+/* Стили для раздела услуг */
+#services {
+	padding: 50px 0;
+	text-align: center;
+}
+
+#services ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#services li {
+	margin: 20px;
+	font-size: 24px;
+}
+
+/* Стили для раздела тарифов */
+#pricing {
+	background-color: #f2f2f2;
+	padding: 50px 0;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+th, td {
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+
+th {
+	background-color: #f2f2f2;
+	font-weight: bold;
+}
+
+/* Стили для раздела отзывов */
+#reviews {
+	padding: 50px 0;
+	text-align: center;
+}
+
+blockquote {
+	font-style: italic;
+	font-size: 24px;
+}
+
+blockquote p {
+	margin: 0;
+	padding: 20px;
+}
+
+#reviews ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#reviews li {
+	margin: 20px;
+}
+
+/* Стили для раздела контактов */
+#contact {
+	padding: 50px 0;
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+
+input, textarea {
+	border: 2px solid #ddd;
+	padding: 10px;
+	margin-bottom: 20px;
+	font-size: 24px;
+	width: 100%;
+}
+
+button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+/* Стили для футера */
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
