@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Репетитор английского языка</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="scr.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+ 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+<header>
+	
+	<div id="navig">
+		
+		<div id="img1">
+			<img src="files/logo.png" width="70px" height="70px" alt="logo">
+		</div>
+	
+<div id="menu">
+		<a href="#main_txt" class="p_menu">Главная</a>
+		<a href="#foto" class="p_menu">фото</a>
+		<a href="#send1" class="p_menu">о нас</a>
+		<a href="#level" class="p_menu">уровень</a>
+
+	</div>	
+		<div class="menuicon"  onclick="myFunction(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		  </div>
+		</div>
+</header>
+<h1 id="hd" style="text-align: center; width: 100%; font-size: 48px; color: white;">Студия английского языка Smart Studio</h1>
+<section id="mai" style="display: flex; flex-direction: row; flex-wrap: wrap">
+<div id="main_txt" style="width: 40%;">
+<div style="color: white;">Подготовка к  &zwnj;</div> <div style="color: rgb(255, 255, 0);">ЕГЭ, олимпиадам</div>  <div style="color: rgb(30, 255, 64);">без нудной зубрёжки</div>
+<button id="request1" type="button" onclick="showBlock()">Подать заявку!</button>
+</div>
+
+<img id="flag" src="files/flag.png" style="height: 500px; width: 800px;" alt="eng">
+</section>
+<marquee scrollamount="15"  style="width: 100%; margin-top: 40px; background: cyan;"><div style="display: flex; flex-direction: row; flex-wrap: nowrap;"><img style="height: 90px;width: 90px;" src="files/iconbooks/3.png"><div style="-webkit-text-stroke: 3px black; color:  cyan; font-size: 60px; line-height: 150%; text-shadow: #000000 0px 1px 1px;">Бесплатное тестирование ваших знаний!</div><img style="height: 90px;width: 90px;" src="files/iconbooks/4.png"></div></marquee>
+<h1 style="font-size: 70px; margin-top: 50px; text-align: center; color: white;">У нас есть:</h1>
+<div class="uuu">
+	<div class="uuu1" style="max-width: 400px; min-height: 340px; border-radius: 70px; position: relative; background: linear-gradient(to bottom, rgb(0, 255, 0),rgb(182, 255, 182));" >
+		<h1 style=" font-weight: 700; text-align: center;">Интерактивные уроки</h1>
+	<h3 style="font-style: cursive;" > Мы превратим обучение в захватывающее путешествие, где наши маленькие студенты будут вовлечены в интересные игры, эмоциональные диалоги, истории, песни и многое другое! </h3>
+<img src="files/rainbow.png" style="position: absolute; right: 10px; bottom: 5px; opacity: 0.3;" height="200px" alt="nnn">	
+	</div>
+<div class="uuu1" style="max-width: 400px; min-height: 340px; border-radius: 70px; position: relative; background: linear-gradient(to bottom, rgb(255, 0, 0),rgb(255, 182, 182));" >
+	
+	<h1 style=" font-weight: 700; text-align: center;"> Лучшие результаты</h1>
+<h3 style="font-style: cursive;" > Наша цель - вдохновить и помочь вашим детям достичь великих результатов! Мы следим за прогрессом каждого ребенка и создаем индивидуальный подход, чтобы добиться оптимального успеха и роста!  </h3>
+<img src="files/rainbow.png" style="position: absolute; right: 10px; bottom: 5px; opacity: 0.3;" height="200px" alt="nnn">	
+</div>
+<div class="uuu1" style="max-width: 400px; min-height: 340px; border-radius: 70px; position: relative; background: linear-gradient(to bottom, rgb(0, 81, 255),rgb(182, 216, 255));" >
+	
+	<h1 style=" font-weight: 700; text-align: center;">Удобное расписание занятий</h1>
+<h3 style="font-style: cursive;" >Smart studio предлагает гибкое расписание занятий, а также возможность выбрать удобное время для начала занятий. Кроме того, уроки могут быть организованы как в формате индивидуальных занятий, так и групповых занятий! </h3>
+<img src="files/rainbow.png" style="position: absolute; right: 10px; bottom: 5px; opacity: 0.3;" height="200px" alt="nnn">	
+</div>
+</div>
+<section style="margin-top: 50px;  display: flex; flex-direction: row; justify-content: space-around; width: 100%; flex-wrap: wrap;">
+<div class="level" style="overflow: hidden; ">
+	<h1>Elementary</h1>
+
+	<div>
+		<ol  class="mmm">
+			<li>знакомство с английским</li>
+			<li>учим письму и чтению</li>
+			<li>различные игры</li>
+		</ol>
+	</div>
+	
+</div>
+<div class="level">
+	<h1>Intermediate</h1>
+	
+	<div>
+		<ol class="mmm">
+			<li>преодоление языкового барьера</li>
+			<li>развитие коммуникативных навыков</li>
+			<li>подготовка к ЕГЭ</li>
+		</ol>
+	</div>
+	
+</div>
+<div class="level" style="overflow: hidden;">
+	<h1>Advanced</h1>
+	
+	<div>
+		<ol class="mmm">
+			<li>технический английский</li>
+			<li>литературный английский</li>
+			<li>медицинский английский</li>
+		</ol>
+	</div>
+</div>
+
+</section>
+<div id="v">
+<h2 id="memories" >Наши воспоминания</h2>
+<video id="v1" controls>
+    <source src="files/video.mp4" type="video/mp4">
+    Ваш браузер не поддерживает HTML5 видео.
+  </video>
+</div>
+<h1 style="font-size: 48px; text-align: center; color: #ffff;">Стоимость обучения</h1>
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; width: 100%;">
+
+<div class="tarif" style="background-color: #252525;">
+<h1 style="text-align: center; width: 100%; border-bottom: 2px solid white ; color: #f5f5f5;">  Индивидуальные занятия</h1>
+
+<ol class="tarif1">
+	<li>индивидуальный подход</li>
+	<li>Ускоренный темп обучения</li>
+	<li>Больше времени на практику</li>
+	<li>Большой выбор материалов и заданий</li>
+</ol>
+
+<div style="text-align: center; font-weight: 900; font-size: 39px; margin-top: 58px; color: white;">1000 руб./час</div>
+<button id="request23" type="button"onclick="showBlock()">Выбрать!</button>
+</div>
+<div class="tarif" style="background: #f7f7f7; border: #00026b 4px solid;">
+	<h1 style="text-align: center; width: 100%; border-bottom: 2px solid rgb(0, 0, 0) ; color: #181818;">  Групповые занятия</h1>
+	<ol class="tarif4">
+		<li>Общение в паре, группе</li>
+		<li>Элемент соперничества и конкуренции</li>
+		<li>Больше мотивации</li>
+		<li>Большой выбор материалов и заданий</li>
+	</ol>
+	<div style="text-align: center; font-weight: 900; font-size: 39px; margin-top: 58px; color: black;">2950 руб./8 занятий</div>
+	<button id="request3" type="button"onclick="showBlock()">Выбрать!</button>
+	
+	</div>
+	
+</div>
+<h1 style="font-size: 48px; text-align: center; color: #ffff;">Отзывы</h1>
+
+	
+<div class="content">
+	<div class="multiple-items">
+ <div>
+<div class="slh">
+	<img src="https://avatars.mds.yandex.net/get-yapic/43978/1T02rkyh8jf5bej2UL9e8i3h0-1/islands-150">
+<div style="display: flex; flex-direction: column;">
+	<h2 style="text-align: left; margin-left: 10px; font-weight: bolder;">Igor</h2>
+<h3 style="color: gray; margin-top: -16px; margin-left: 10px; opacity: 0.8; text-align: left;">16.05.2022</h3>
+</div>
+</div>
+	<h3 style="margin-top: 50px; margin-left: -0px; text-align: left;">В Smart Studio прошел начальный курс английского языка, получил представление об английском, особенностям грамматического построения предложений и языка. Многое стало понятно из того что при прошлой учебе оставалось недоступным. Продолжить освоение разговорного языка на полученной основе будет намного легче. Учеба проходила исключительно в доброжелательной обстановке. На все вопросы получал вразумительные ответы. Спасибо! С сентября иду на следующий уровень)</h3>
+ </div>
+
+
+ <div>
+	<div class="slh">
+	<img src="https://avatars.mds.yandex.net/get-yapic/41409/tog89g0Nyrf0ki1y8CxXqfihs-1/islands-150">
+	<div style="display: flex; flex-direction: column;">
+	<h2 style="text-align: left; margin-left: 10px; font-weight: bolder;">
+		Ренат Фаридов</h2>
+<h3 style="color: gray; margin-top: -12px; margin-left: 10px; opacity: 0.8; text-align: left;">8.01.2022</h3>
+</div>
+</div>
+
+<h3 style="margin-top: 50px; margin-left: -0px; text-align: left;">Мне понадобился английский язык для работы. Я учил в школе, немного осталось в памяти, но вот разговорный был вообще на нуле. По отзывам нашёл эту студию, очень удобно, недалеко от дома. Преподаватель Наталья замечательный специалист, мало того, что нашла ко мне подход, так и результаты долго не заставили себя ждать. За год мне удалось достичь нужного уровня и разговориться. А теперь я иду на повышение и переезжаю в Москву. Надеюсь, продолжим занятия, но уже в онлайн формате. Спасибо за знания</h3>
+
+</div>
+
+<div>	
+	<div class="slh">
+	<img src="https://avatars.mds.yandex.net/get-yapic/65952/mHWckmz811eJYn7JFHnjMx7WTio-1/islands-150">
+	<div style="display: flex; flex-direction: column;">
+		<h2 style="text-align: left; margin-left: 10px; font-weight: bolder;">Елена Щеглова</h2>
+	<h3 style="color: gray; margin-top: -12px; margin-left: 10px; opacity: 0.8; text-align: left;">6.01.2021</h3>
+</div>
+</div>
+
+	<h3 style="margin-top: 50px; margin-left: -0px; text-align: left;">Спасибо большое за курс английского языка для взрослых! Эффективно и продуктивно!!! Оказана большая помощь в сдаче тестов!!! Рекомендую!!!!</h3>
+</div>
+
+<div>
+	<div class="slh">
+		<img src="https://avatars.mds.yandex.net/get-yapic//islands-150">
+		<div style="display: flex; flex-direction: column;">
+		<h2 style="text-align: left; margin-left: 10px; font-weight: bolder;">Валерий</h2>
+	<h3 style="color: gray; margin-top: -12px; margin-left: 94px; opacity: 0.8; text-align: left;">31.08.2021</h3>
+</div>
+</div>
+
+	<h3 style="margin-top: 50px; margin-left: -0px; text-align: left;">Отличная языковая студия!!! Самое главное, что мои дети ходят с удовольствием - это для меня важный показатель!!! Благодарен Наталье Валериевне, за эту уютную, дружескую и тёплую атмосферу встудии, что ей удаётся создавать! Да и результаты ощутимы, т.к показатели в школе выросли, а теперь уже идем на обгон. Дети просятся заниматься даже на каникулах))</h3>
+</div>
+
+<div>
+	<div class="slh">
+	<img src="https://avatars.mds.yandex.net/get-yapic/51381/vV3AVeaI8qBjh05P9HxWdF4lC0-1/islands-150">
+	<div style="display: flex; flex-direction: column;">
+		<h2 style="text-align: left; margin-left: 10px; font-weight: bolder;">Сергей</h2>
+	<h3 style="color: gray; margin-top: -12px; margin-left: 10px; opacity: 0.8; text-align: left;">25.08.2019</h3>
+</div>
+</div>
+	<h3 style="margin-top: 50px; margin-left: -0px; text-align: left;">Хочу поблагодарить Smart Studio за то, что смогли найти подход к моей дочери и привить интерес к языку. После школьных занятий ребёнок испытывал сильный стресс страх перед английским. Но после ваших занятий все изменилось. Спасибо вам огромное! Всем рекомендую ваши занятия и вашу студию с благоприятной атмосферой! </h3>
+ </div>
+
+ </div>
+</div>
+
+  
+<div class="bg-animation">
+	<div id="stars"></div>
+	<div id="stars2"></div>
+	<div id="stars3"></div>
+	<div id="stars4"></div>
+</div>
+<footer>
+ 
+	<div class="footer">
+	<div class="footer1">
+	  <div class="form1">
+		<h1 class="ppp">Ocтавить заявку на обучение английскому языку </h1>
+		<div class="contacts1">
+		   <div class="cont" style="color:white">☎ &zwnj; <ins class="phone"> 8 961 531 82 88</ins></div>
+		   <div class="cont">📧  &zwnj;<ins>shoptomsk@mail.ru</ins></div>
+		</div>
+		<div class ="text-s" style="max-width:419px">Наши курсы специально разработаны для детей и подростков, чтобы помочь им освоить английский без напряжения и с увлечением. Наши опытные специалисты используют интерактивные методики и игры, чтобы сделать процесс обучения легким и увлекательным.</div>
+	  </div>
+	  <div class="form1">
+		<form id="client" method ="POST" action="https://api.slapform.com/23nDzCnIV">
+		<label>
+		 <br>
+		<input class="elem-form" name ="f-name" required id="1" type="text"
+		  placeholder="Ваше имя" >
+			</label><br >
+		<label>
+		 <br>
+		<input name ="Phone" class="elem-form"  required id="4" type="tel"
+		  placeholder="Ваш номер" >
+			</label><br >
+			<br >
+
+		<br > <input type="checkbox" required class="custom-checkbox" id="happy">
+	   <label style="color:#999999" for="happy">Отправляя заявку, я даю согласие на &zwnj; <a href="" style="color:red"> обработку своих персональных данных </a></label><br>
+
+
+	   <br ><button type="submit" id="send1">Отправить</button>
+		   </form>
+	  </div>			
+
+	</div>
+	<br ><br ><br >
+	<h5>  Краснодар, Россия, Сормовская, 208оф<div class="32"></div></h5>
+<h5>Smart Studio</h5><br ><br ><br >
+   </div> 
+ </footer> 
+ <form id="fm1" style="display: none;" method="POST" action="https://api.slapform.com/23nDzCnIV">
+	<h1 style="text-align: center;">Заполните заявку</h1>
+	<label>
+	 <h3> Имя:</h3>
+	  <input class="el_fm1" name="name" type="text" placeholder="Ваше имя" required>
+	</label>
+	
+	<br><br>
+	
+	<label>
+		<h3>Телефон:</h3>
+	  <input type="tel" class="el_fm1" name="phone" placeholder="Ваш телефон" required>
+	</label>
+	
+		<br><br>
+	<label>
+	  <input type="checkbox" id="agree" required>
+	  Соглашаюсь с условиями использования
+	</label>
+	
+	<br><br>
+	<input type="submit" value="Отправить" id="request2">
+  </form>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>
